@@ -1,0 +1,24 @@
+{
+ "name": "The Morning Edition",
+ "short_name": "Edition",
+ "description": "A daily tap-through newspaper.",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "portrait",
+ "background_color": "#F2F4F3",
+ "theme_color": "#F2F4F3",
+ "icons": [
+  {
+   "src": "icons/icon.svg",
+   "sizes": "any",
+   "type": "image/svg+xml"
+  },
+  {
+   "src": "icons/icon.svg",
+   "sizes": "any",
+   "type": "image/svg+xml",
+   "purpose": "maskable"
+  }
+ ]
+}

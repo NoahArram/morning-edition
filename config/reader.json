@@ -1,0 +1,21 @@
+{
+ "priorities": [
+  "Technology and AI: model releases, AI research and policy, the major labs, developer tools, software engineering, security, chips, UK tech",
+  "UK news: politics, economy, anything a UK resident should know",
+  "Formula 1: results, driver and team news, technical and regulation stories; McLaren fan",
+  "World news: the biggest international stories"
+ ],
+ "reader": "UK software engineer and final-year computer science student",
+ "target_stories": 10,
+ "style": "British English, plain and direct, amounts in £ where sensible",
+ "avoid": [
+  "celebrity gossip",
+  "clickbait",
+  "repeating yesterday's stories"
+ ],
+ "notes": "No 'why it matters' summaries: report, do not interpret for the reader.",
+ "depth": {
+  "technology_ai_f1": "Expert reader. Write at the level of a senior engineer and a knowledgeable F1 follower: technical specifics, numbers and mechanisms, no explaining basics.",
+  "uk_world": "Brief context for names and background is fine."
+ }
+}

@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Morning Edition</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#F2F4F3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1316" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon.svg" id="touchicon">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Edition">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600;6..96,800&family=IBM+Plex+Sans+Condensed:wght@500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+/* Layout: one screen, no scrolling. A fixed-height sheet whose content flows into
+   screen-wide columns; each tap turns one column, like a page of a paper. */
+:root{
+  --paper:#F2F4F3; --ink:#12171B; --muted:#5B666E; --rule:#C9D0D3; --accent:#1B4FD1; --wash:#E4E9EA;
+  --display:"Bodoni Moda","Didot","Georgia",serif;
+  --body:"Source Serif 4","Georgia","Times New Roman",serif;
+  --label:"IBM Plex Sans Condensed","Arial Narrow","Helvetica Neue",Arial,sans-serif;
+  --fs:18px;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --paper:#0F1316; --ink:#E7EAEB; --muted:#98A3AA; --rule:#2C353B; --accent:#8FB1FF; --wash:#192026; color-scheme:dark } }
+:root[data-theme="dark"]{
+  --paper:#0F1316; --ink:#E7EAEB; --muted:#98A3AA; --rule:#2C353B; --accent:#8FB1FF; --wash:#192026; color-scheme:dark }
+
+html,body{height:100%;margin:0}
+[hidden]{display:none!important}
+:root{color-scheme:light dark}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);overflow:hidden}
+.app{height:100%;box-sizing:border-box;max-width:680px;margin:0 auto;display:grid;grid-template-rows:auto minmax(0,1fr) auto;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+.head{display:flex;align-items:center;gap:12px;padding-block:10px 8px;border-bottom:1px solid var(--rule)}
+.head .name{font-family:var(--display);font-weight:800;font-size:17px;letter-spacing:.01em;white-space:nowrap}
+.head .run{flex:1;min-width:0;font-family:var(--label);font-size:12px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--muted);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.btn{font-family:var(--label);font-weight:600;font-size:14px;color:var(--ink);background:transparent;
+  border:1px solid var(--rule);border-radius:4px;min-width:40px;height:36px;padding:0 10px;cursor:pointer}
+.btn:disabled{opacity:.35;cursor:default}
+.btn:focus-visible,.toc button:focus-visible,.vote button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.view{position:relative;overflow:hidden;min-height:0;cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.book{height:100%;column-fill:auto;font-size:var(--fs);line-height:1.56;transition:transform .26s ease}
+@media (prefers-reduced-motion: reduce){.book{transition:none}}
+.book>section{break-before:column;padding-block:18px 8px}
+.book>section:first-child{break-before:auto}
+
+.kicker{font-family:var(--label);font-weight:600;font-size:.68em;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 .5em}
+h2{font-family:var(--display);font-weight:600;font-size:1.72em;line-height:1.12;margin:0 0 .45em;text-wrap:balance;break-after:avoid}
+.stand{font-style:italic;color:var(--muted);margin:0 0 .9em;break-after:avoid}
+p{margin:0 0 .85em;orphans:2;widows:2;hyphens:auto}
+.src{font-family:var(--label);font-size:.74em;color:var(--muted);margin:.8em 0 0;break-inside:avoid}
+a{color:var(--accent);text-underline-offset:2px}
+.vote{display:flex;gap:8px;flex-wrap:wrap;margin-top:1em;break-inside:avoid}
+.vote button{font-family:var(--label);font-size:.72em;font-weight:500;color:var(--muted);background:transparent;
+  border:1px solid var(--rule);border-radius:999px;padding:.45em .9em;cursor:pointer}
+.vote button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+.cover .mast{font-family:var(--display);font-weight:800;font-size:clamp(2.1em,11vw,3.4em);line-height:.95;margin:.1em 0 .25em;text-wrap:balance}
+.cover .dateline{font-family:var(--label);font-size:.74em;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
+  border-block:1px solid var(--ink);padding:.55em 0;display:flex;gap:.4em 1em;flex-wrap:wrap;justify-content:space-between}
+.cover .note{background:var(--wash);padding:.7em .9em;margin:1em 0 0;font-size:.86em;border-radius:3px}
+.toc{list-style:none;margin:1em 0 0;padding:0}
+.toc li{border-bottom:1px solid var(--rule);break-inside:avoid}
+.toc button{display:block;width:100%;text-align:left;background:none;border:0;color:inherit;font:inherit;padding:.42em 0 .5em;cursor:pointer}
+.toc .sec,.lead .sec{display:block;font-family:var(--label);font-size:.64em;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.lead .sec{color:var(--accent);font-weight:600;font-size:.68em}
+.toc .hl{display:block;font-weight:600;font-size:.9em;line-height:1.25}
+.lead{display:block;width:100%;text-align:left;background:none;border:0;color:inherit;font:inherit;padding:1em 0 .2em;cursor:pointer}
+.lead .hl{display:block;font-family:var(--display);font-weight:600;font-size:1.6em;line-height:1.12;margin:.15em 0 .3em;text-wrap:balance}
+.lead .st{display:block;color:var(--muted);font-style:italic}
+.also{font-family:var(--label);font-weight:600;font-size:.68em;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:1.2em 0 0;padding-top:.8em;border-top:1px solid var(--ink)}
+.stale{border:1px solid var(--accent);color:var(--ink);padding:.7em .9em;margin:1em 0 0;font-size:.86em;border-radius:3px}
+.agenda{list-style:none;margin:0;padding:0}
+.agenda li{padding:.7em 0;border-bottom:1px solid var(--rule);break-inside:avoid}
+.brief{margin:0;padding:.7em 0;border-bottom:1px solid var(--rule);break-inside:avoid}
+.endmark{font-family:var(--display);font-weight:600;font-size:1.9em;line-height:1.1;margin:.6em 0 .3em;text-wrap:balance}
+.state{padding-top:22vh;text-align:center;color:var(--muted)}
+.state h2{color:var(--ink)}
+
+.foot{display:flex;align-items:center;gap:12px;padding-block:8px 10px;border-top:1px solid var(--rule)}
+.prog{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px;align-items:center}
+.folio{font-family:var(--label);font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-variant-numeric:tabular-nums}
+.bar{width:100%;height:2px;background:var(--rule)}
+.bar i{display:block;height:100%;width:0;background:var(--ink);transition:width .2s}
+.set{break-inside:avoid;margin-top:1.4em;padding-top:.9em;border-top:1px solid var(--ink)}
+.set p{font-size:.86em;color:var(--muted)}
+.set input{font:inherit;font-size:16px;width:100%;box-sizing:border-box;padding:.55em .7em;border:1px solid var(--rule);border-radius:4px;background:var(--paper);color:var(--ink);margin:.2em 0 .6em}
+.set .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.set .ok{color:var(--ink);font-weight:600}
+.sync{font-family:var(--label);font-size:.7em;color:var(--muted);margin:.5em 0 0;min-height:1.2em}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="head">
+    <span class="name">The Morning Edition</span>
+    <span class="run" id="run"></span>
+    <button class="btn" id="size" type="button" aria-label="Change text size">Aa</button>
+  </header>
+  <main class="view" id="view" aria-live="polite">
+    <div class="book" id="book" lang="en-GB">
+      <section class="state"><h2>Setting today's edition</h2><p>One moment.</p></section>
+    </div>
+  </main>
+  <footer class="foot">
+    <button class="btn" id="prev" type="button" aria-label="Previous page">&larr;</button>
+    <div class="prog"><span class="folio" id="folio">&nbsp;</span><div class="bar"><i id="fill"></i></div></div>
+    <button class="btn" id="next" type="button" aria-label="Next page">&rarr;</button>
+  </footer>
+</div>
+
+<script>
+
+(function(){
+  var GAP=48, SIZES=[16,18,20,23];
+  var view=document.getElementById('view'), book=document.getElementById('book');
+  var run=document.getElementById('run'), folio=document.getElementById('folio'), fill=document.getElementById('fill');
+  var prevB=document.getElementById('prev'), nextB=document.getElementById('next');
+  var page=0, pages=1, W=0, editions=[], current=null, votes={};
+
+  function ls(k,v){ try{ if(v===undefined) return localStorage.getItem(k); localStorage.setItem(k,v);}catch(e){ return null; } }
+  var si=parseInt(ls('me-size'),10); if(!(si>=0&&si<SIZES.length)) si=1;
+  function applySize(){ document.documentElement.style.setProperty('--fs',SIZES[si]+'px'); }
+  applySize();
+
+  function el(tag,cls,text){ var e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e; }
+  function safeUrl(u){ return typeof u==='string' && /^https?:\/\//i.test(u) ? u : null; }
+  function fmtDate(d){ var t=new Date(d+'T12:00:00'); if(isNaN(t)) return d;
+    return t.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric'}); }
+  function sourcesLine(list){
+    var p=el('p','src'); p.appendChild(document.createTextNode('Sources: '));
+    (list||[]).forEach(function(s,i){ if(i) p.appendChild(document.createTextNode(', '));
+      var u=safeUrl(s&&s.url); if(u){ var a=el('a',null,s.name||u); a.href=u; a.target='_blank'; a.rel='noopener'; p.appendChild(a); }
+      else p.appendChild(document.createTextNode((s&&s.name)||'')); });
+    return p;
+  }
+
+  function layout(keep){
+    var anchor=keep?currentSection():null;
+    W=view.clientWidth; var H=view.clientHeight;
+    book.style.height=H+'px'; book.style.columnWidth=W+'px'; book.style.columnGap=GAP+'px';
+    pages=Math.max(1,Math.round((book.scrollWidth+GAP)/(W+GAP)));
+    if(anchor) page=pageOf(anchor);
+    go(page,true);
+  }
+  function pageOf(node){ var x=node.getBoundingClientRect().left-book.getBoundingClientRect().left; return Math.max(0,Math.round(x/(W+GAP))); }
+  function currentSection(){ var s=book.children, best=s[0]; for(var i=0;i<s.length;i++){ if(pageOf(s[i])<=page) best=s[i]; } return best; }
+  function go(n,instant){
+    page=Math.min(Math.max(n,0),pages-1);
+    if(instant){ book.style.transition='none'; }
+    book.style.transform='translateX('+(-page*(W+GAP))+'px)';
+    if(instant){ book.offsetWidth; book.style.transition=''; }
+    folio.textContent=(page+1)+' of '+pages;
+    fill.style.width=(pages>1?(page/(pages-1))*100:100)+'%';
+    prevB.disabled=page===0; nextB.disabled=page===pages-1;
+    var sec=currentSection(); run.textContent=(sec&&sec.dataset.run)||'';
+    if(current&&sec) ls('me-pos-'+current.date,String(Array.prototype.indexOf.call(book.children,sec)));
+  }
+
+  function todayStr(){ var d=new Date(); return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2); }
+  function render(ed, restore){
+    current=ed; book.textContent='';
+    var stories=Array.isArray(ed.stories)?ed.stories:[], briefs=Array.isArray(ed.briefs)?ed.briefs:[], agenda=Array.isArray(ed.today)?ed.today:[];
+    var secs=[];
+    var cover=el('section','cover'); cover.dataset.run=ed.preview?'Preview':'Front page';
+    cover.appendChild(el('div','mast','The Morning Edition'));
+    var dl=el('div','dateline'); dl.appendChild(el('span',null,fmtDate(ed.date)));
+    var meta=stories.length+' stories'+(ed.readMinutes?' · '+ed.readMinutes+' min':'');
+    var g=ed.generatedAt?new Date(ed.generatedAt):null;
+    if(g&&!isNaN(g)&&!ed.preview) meta+=' · set '+g.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'});
+    dl.appendChild(el('span',null,meta));
+    cover.appendChild(dl);
+    if(!ed.preview&&ed.date<todayStr()&&editions.length&&editions[0].date===ed.date)
+      cover.appendChild(el('p','stale',"Today's edition has not arrived yet. This is the most recent paper, from "+fmtDate(ed.date)+'.'));
+    if(ed.note) cover.appendChild(el('p','note',ed.note));
+    if(stories.length){
+      var L=stories[0], lb=el('button','lead'); lb.type='button';
+      lb.appendChild(el('span','sec',L.section||'News')); lb.appendChild(el('span','hl',L.headline||''));
+      if(L.standfirst) lb.appendChild(el('span','st',L.standfirst));
+      lb.addEventListener('click',function(){ go(pageOf(secs[0])); });
+      cover.appendChild(lb);
+    }
+    if(stories.length>1){
+      cover.appendChild(el('p','also','Also in this edition'));
+      var toc=el('ol','toc');
+      stories.forEach(function(s,i){
+        if(!i) return;
+        var li=el('li'), b=el('button'); b.type='button';
+        b.appendChild(el('span','sec',s.section||'News')); b.appendChild(el('span','hl',s.headline||''));
+        b.addEventListener('click',function(){ go(pageOf(secs[i])); });
+        li.appendChild(b); toc.appendChild(li);
+      });
+      cover.appendChild(toc);
+    }
+    book.appendChild(cover);
+
+    stories.forEach(function(s,i){
+      var a=el('section','story'); a.dataset.run=s.section||'News'; secs.push(a);
+      a.appendChild(el('p','kicker',(s.section||'News')+' · '+(i+1)+' of '+stories.length));
+      a.appendChild(el('h2',null,s.headline||''));
+      if(s.standfirst) a.appendChild(el('p','stand',s.standfirst));
+      (Array.isArray(s.body)?s.body:[s.body]).forEach(function(par){ if(par) a.appendChild(el('p',null,String(par))); });
+      if(s.sources&&s.sources.length) a.appendChild(sourcesLine(s.sources));
+      if(!ed.preview) a.appendChild(voteRow(ed,s,i));
+      book.appendChild(a);
+    });
+
+    if(agenda.length){
+      var ag=el('section'); ag.dataset.run='Today'; ag.appendChild(el('p','kicker','On the agenda today'));
+      var ul=el('ul','agenda'); agenda.forEach(function(t){ if(t) ul.appendChild(el('li',null,String(t))); });
+      ag.appendChild(ul); book.appendChild(ag);
+    }
+    if(briefs.length){
+      var br=el('section'); br.dataset.run='In brief'; br.appendChild(el('p','kicker','In brief'));
+      briefs.forEach(function(b){ var p=el('p','brief',(b&&b.text)||''); var u=safeUrl(b&&b.source&&b.source.url);
+        if(u){ p.appendChild(document.createTextNode(' ')); var a=el('a',null,b.source.name||'Source'); a.href=u; a.target='_blank'; a.rel='noopener'; p.appendChild(a); }
+        br.appendChild(p); });
+      book.appendChild(br);
+    }
+
+    var end=el('section'); end.dataset.run='End';
+    end.appendChild(el('p','kicker','End of edition'));
+    end.appendChild(el('div','endmark',ed.preview?'Your first paper arrives in the morning.':'That is the edition. You are caught up.'));
+    end.appendChild(el('p',null,ed.preview?'This page fills itself. There is nothing to refresh or set up.':'Nothing more to read until tomorrow morning.'));
+    var others=editions.filter(function(e){ return e.date!==ed.date; });
+    if(others.length){
+      end.appendChild(el('p','kicker','Earlier editions'));
+      var ol=el('ol','toc');
+      others.forEach(function(e){ var li=el('li'), b=el('button'); b.type='button';
+        b.appendChild(el('span','hl',fmtDate(e.date)+(e.preview?' (preview)':'')));
+        b.addEventListener('click',function(){ fetchEdition(e.date).then(function(full){ render(full,true); }).catch(function(){}); });
+        li.appendChild(b); ol.appendChild(li); });
+      end.appendChild(ol);
+    }
+    end.appendChild(settingsBlock());
+    book.appendChild(end);
+
+    var saved=restore?parseInt(ls('me-pos-'+ed.date),10):0;
+    page=0; layout(false);
+    if(saved>0&&book.children[saved]) go(pageOf(book.children[saved]),true);
+    loadVotes(ed);
+  }
+
+  /* feedback: kept on this device, and written to the repo when a token is connected */
+  var REPO='NoahArram/morning-edition', API='https://api.github.com/repos/'+REPO+'/contents/';
+  var shas={}, syncTimer=null, syncNote='';
+  function token(){ return ls('me-token')||''; }
+  function loadLocalVotes(date){ try{ return JSON.parse(ls('me-votes-'+date)||'{}')||{}; }catch(e){ return {}; } }
+  function dirtyDates(){ try{ return JSON.parse(ls('me-dirty')||'[]')||[]; }catch(e){ return []; } }
+  function setDirty(date,on){ var d=dirtyDates().filter(function(x){ return x!==date; }); if(on) d.push(date); ls('me-dirty',JSON.stringify(d.slice(-20))); }
+  function b64(str){ return btoa(unescape(encodeURIComponent(str))); }
+  function setSyncNote(t){ syncNote=t; Array.prototype.forEach.call(document.querySelectorAll('.sync'),function(n){ n.textContent=t; }); }
+  function gh(path,opts){ opts=opts||{}; opts.headers={'Authorization':'Bearer '+token(),'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'}; return fetch(API+path,opts); }
+  function pushVotes(date){
+    var items=loadLocalVotes(date), path='feedback/'+date+'.json';
+    var body=JSON.stringify({date:date,updatedAt:new Date().toISOString(),items:items},null,1)+'\n';
+    function put(sha){ var payload={message:'Reader feedback for '+date,content:b64(body)}; if(sha) payload.sha=sha;
+      return gh(path,{method:'PUT',body:JSON.stringify(payload)}); }
+    var known=shas[date]!==undefined?Promise.resolve(shas[date]):gh(path+'?ref=main&t='+Date.now()).then(function(r){ return r.status===200?r.json().then(function(j){ return j.sha; }):null; });
+    return known.then(put).then(function(r){
+      if(r.status===409||r.status===422){ delete shas[date]; return gh(path+'?ref=main&t='+Date.now()).then(function(x){ return x.status===200?x.json():null; }).then(function(j){ return put(j&&j.sha); }); }
+      return r;
+    }).then(function(r){
+      if(r.status===401||r.status===403) throw new Error('auth');
+      if(!r.ok) throw new Error('http');
+      return r.json().then(function(j){ shas[date]=j.content&&j.content.sha; setDirty(date,false); });
+    });
+  }
+  function flush(){
+    if(!token()) { setSyncNote(dirtyDates().length?'Saved on this device. Connect feedback on the last page to send it to the editor.':''); return; }
+    var list=dirtyDates(); if(!list.length) return;
+    setSyncNote('Sending feedback…');
+    list.reduce(function(p,d){ return p.then(function(){ return pushVotes(d); }); },Promise.resolve())
+      .then(function(){ setSyncNote('Feedback sent to the editor.'); })
+      .catch(function(e){ setSyncNote(e&&e.message==='auth'?'The feedback token was refused. Reconnect it on the last page.':'Could not send feedback just now. It is saved here and will be sent next time.'); });
+  }
+  function voteRow(ed,s,i){
+    var wrap=el('div'); wrap.style.breakInside='avoid';
+    var row=el('div','vote'); row.dataset.story=String(i);
+    [['more','More like this'],['less','Less like this']].forEach(function(o){
+      var b=el('button',null,o[1]); b.type='button'; b.dataset.v=o[0]; b.setAttribute('aria-pressed','false');
+      b.addEventListener('click',function(){
+        var key='s'+i, was=votes[key]&&votes[key].vote;
+        if(was===o[0]) delete votes[key]; else votes[key]={vote:o[0],headline:s.headline||'',section:s.section||''};
+        ls('me-votes-'+ed.date,JSON.stringify(votes)); setDirty(ed.date,true); paintVotes();
+        clearTimeout(syncTimer); syncTimer=setTimeout(flush,1500);
+      });
+      row.appendChild(b);
+    });
+    wrap.appendChild(row); wrap.appendChild(el('p','sync',''));
+    return wrap;
+  }
+  function paintVotes(){
+    Array.prototype.forEach.call(book.querySelectorAll('.vote'),function(row){
+      var v=votes['s'+row.dataset.story]; v=v&&v.vote;
+      Array.prototype.forEach.call(row.children,function(b){ b.setAttribute('aria-pressed',String(b.dataset.v===v)); });
+    });
+  }
+  function loadVotes(ed){ votes=ed.preview?{}:loadLocalVotes(ed.date); paintVotes(); }
+  function settingsBlock(){
+    var box=el('div','set');
+    box.appendChild(el('p','kicker','Feedback'));
+    function draw(msg){
+      while(box.children.length>1) box.removeChild(box.lastChild);
+      if(token()){
+        box.appendChild(el('p','ok','Feedback is connected.'));
+        box.appendChild(el('p',null,'Your More and Less marks are sent to the editor and shape the next edition.'));
+        var d=el('button','btn','Disconnect'); d.type='button'; d.addEventListener('click',function(){ try{ localStorage.removeItem('me-token'); }catch(e){} draw(''); layout(true); });
+        box.appendChild(d);
+      } else {
+        box.appendChild(el('p',null,'Marks are saved on this device. To send them to the editor, paste the access token for this paper once. It is kept only on this device.'));
+        var inp=el('input'); inp.type='password'; inp.id='tok'; inp.autocomplete='off'; inp.placeholder='github_pat_…'; inp.setAttribute('aria-label','Access token');
+        var r=el('div','row'), c=el('button','btn','Connect'); c.type='button';
+        c.addEventListener('click',function(){
+          var t=inp.value.trim(); if(!t) return; c.disabled=true;
+          fetch('https://api.github.com/repos/'+REPO,{headers:{'Authorization':'Bearer '+t,'Accept':'application/vnd.github+json'}})
+            .then(function(x){ return x.ok?x.json():Promise.reject(); })
+            .then(function(j){ if(!(j.permissions&&j.permissions.push)) return Promise.reject(); ls('me-token',t); draw(''); layout(true); flush(); })
+            .catch(function(){ c.disabled=false; draw('That token was not accepted. It needs read and write access to Contents on this repository.'); layout(true); });
+        });
+        r.appendChild(c); box.appendChild(inp); box.appendChild(r);
+      }
+      if(msg) box.appendChild(el('p',null,msg));
+    }
+    draw(''); return box;
+  }
+
+  function showState(title,text){
+    current=null; book.textContent=''; var s=el('section','state'); s.appendChild(el('h2',null,title)); s.appendChild(el('p',null,text));
+    book.appendChild(s); page=0; layout(false);
+  }
+
+  /* page turning */
+  nextB.addEventListener('click',function(){ go(page+1); });
+  prevB.addEventListener('click',function(){ go(page-1); });
+  view.addEventListener('click',function(e){
+    if(e.target.closest('a,button,input,label')) return;
+    var r=view.getBoundingClientRect(); go(page+((e.clientX-r.left)>r.width*0.33?1:-1));
+  });
+  var tx=null,ty=0;
+  view.addEventListener('touchstart',function(e){ tx=e.touches[0].clientX; ty=e.touches[0].clientY; },{passive:true});
+  view.addEventListener('touchend',function(e){
+    if(tx===null) return; var dx=e.changedTouches[0].clientX-tx, dy=e.changedTouches[0].clientY-ty; tx=null;
+    if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)){ e.preventDefault(); go(page+(dx<0?1:-1)); }
+  });
+  book.addEventListener('focusin',function(e){ var n=pageOf(e.target); view.scrollLeft=0; if(n!==page) go(n,true); });
+  view.addEventListener('scroll',function(){ if(view.scrollLeft) view.scrollLeft=0; if(view.scrollTop) view.scrollTop=0; });
+  document.addEventListener('keydown',function(e){
+    if(e.target&&/^(INPUT|TEXTAREA)$/.test(e.target.tagName)) return;
+    if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){ e.preventDefault(); go(page+1); }
+    else if(e.key==='ArrowLeft'||e.key==='PageUp'){ e.preventDefault(); go(page-1); }
+  });
+  document.getElementById('size').addEventListener('click',function(){ si=(si+1)%SIZES.length; ls('me-size',String(si)); applySize(); layout(true); });
+  var rt; window.addEventListener('resize',function(){ clearTimeout(rt); rt=setTimeout(function(){ layout(true); },120); });
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(function(){ layout(true); });
+  layout(false);
+
+  /* iOS needs a PNG home-screen icon: draw one from the masthead letter */
+  try{ var cv=document.createElement('canvas'); cv.width=cv.height=180; var cx=cv.getContext('2d');
+    cx.fillStyle='#12171B'; cx.fillRect(0,0,180,180); cx.fillStyle='#F2F4F3'; cx.textAlign='center';
+    cx.font='700 108px Georgia,"Times New Roman",serif'; cx.fillText('M',90,114);
+    cx.fillStyle='#8FB1FF'; cx.fillRect(43,124,94,4);
+    document.getElementById('touchicon').href=cv.toDataURL('image/png'); }catch(e){}
+
+  /* data: static JSON files published beside the page */
+  function getJSON(path){ return fetch(path+'?t='+Date.now(),{cache:'no-store'}).then(function(r){ if(!r.ok) throw new Error('http'); return r.json(); }); }
+  function fetchEdition(date){ return getJSON('editions/'+date+'.json'); }
+  var loading=false;
+  function refresh(){
+    if(loading) return; loading=true;
+    getJSON('editions/index.json').then(function(idx){
+      var list=(idx&&Array.isArray(idx.editions)?idx.editions:[]).filter(function(x){ return x&&x.date; })
+        .sort(function(a,b){ return a.date<b.date?1:-1; }).slice(0,8);
+      if(!list.length){ editions=[]; showState('No edition yet','The first paper is set overnight and will appear here in the morning.'); return; }
+      var newest=list[0], had=editions.length?editions[0]:null;
+      var same=current&&had&&had.date===newest.date&&(had.generatedAt||'')===(newest.generatedAt||'');
+      editions=list;
+      if(same) return;
+      return fetchEdition(newest.date).then(function(ed){ render(ed,true); });
+    }).catch(function(){
+      if(!current) showState('The paper could not be loaded','Check your connection. It will load the next time you open the app.');
+    }).then(function(){ loading=false; });
+  }
+  refresh(); flush();
+  document.addEventListener('visibilitychange',function(){ if(document.visibilityState==='visible'){ refresh(); flush(); } });
+  if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(function(){});
+})();
+</script>
+</body>
+</html>
