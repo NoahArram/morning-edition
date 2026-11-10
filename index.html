@@ -53,6 +53,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--body);overflow:h
 @media (prefers-reduced-motion: reduce){.book{transition:none}}
 .book>section{break-before:column;padding-block:18px 8px}
 .book>section:first-child{break-before:auto}
+.book .brk{break-before:column;-webkit-column-break-before:always}
 
 .kicker{font-family:var(--label);font-weight:600;font-size:.68em;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 .5em}
 h2{font-family:var(--display);font-weight:600;font-size:1.72em;line-height:1.12;margin:0 0 .45em;text-wrap:balance;break-after:avoid}
@@ -145,10 +146,26 @@ a{color:var(--accent);text-underline-offset:2px}
     return p;
   }
 
+  /* Safari can let unbreakable blocks (a sources line, a list item) spill past the
+     bottom of a page instead of moving them on. Find any block that crosses the page
+     bottom and push it to the next page; repeat until nothing is clipped. */
+  var GUARD='h2,.stand,.src,.votes,li,.brief,.lead,.also,.endmark,.set,.kicker,.note,.stale,.dateline,.mast';
+  function fixClips(H){
+    var bottom=view.getBoundingClientRect().top+H, added=0;
+    Array.prototype.forEach.call(book.querySelectorAll(GUARD),function(n){
+      if(n.classList.contains('brk')) return;
+      var r=n.getBoundingClientRect();
+      if(r.height&&r.height<H*0.9&&r.top<bottom-1&&r.bottom>bottom+1){ n.classList.add('brk'); added++; }
+    });
+    return added;
+  }
   function layout(keep){
     var anchor=keep?currentSection():null;
     W=view.clientWidth; var H=view.clientHeight;
     book.style.height=H+'px'; book.style.columnWidth=W+'px'; book.style.columnGap=GAP+'px';
+    Array.prototype.forEach.call(book.querySelectorAll('.brk'),function(n){ n.classList.remove('brk'); });
+    book.style.transition='none'; book.style.transform='none';
+    for(var k=0;k<12&&fixClips(H);k++){}
     pages=Math.max(1,Math.round((book.scrollWidth+GAP)/(W+GAP)));
     if(anchor) page=pageOf(anchor);
     go(page,true);
@@ -285,7 +302,7 @@ a{color:var(--accent);text-underline-offset:2px}
       .catch(function(e){ setSyncNote(e&&e.message==='auth'?'The feedback token was refused. Reconnect it on the last page.':'Could not send feedback just now. It is saved here and will be sent next time.'); });
   }
   function voteRow(ed,s,i){
-    var wrap=el('div'); wrap.style.breakInside='avoid';
+    var wrap=el('div','votes'); wrap.style.breakInside='avoid';
     var row=el('div','vote'); row.dataset.story=String(i);
     [['more','More like this'],['less','Less like this']].forEach(function(o){
       var b=el('button',null,o[1]); b.type='button'; b.dataset.v=o[0]; b.setAttribute('aria-pressed','false');
@@ -361,7 +378,12 @@ a{color:var(--accent);text-underline-offset:2px}
     else if(e.key==='ArrowLeft'||e.key==='PageUp'){ e.preventDefault(); go(page-1); }
   });
   document.getElementById('size').addEventListener('click',function(){ si=(si+1)%SIZES.length; ls('me-size',String(si)); applySize(); layout(true); });
-  var rt; window.addEventListener('resize',function(){ clearTimeout(rt); rt=setTimeout(function(){ layout(true); },120); });
+  var rt; function relayout(){ clearTimeout(rt); rt=setTimeout(function(){ layout(true); },120); }
+  window.addEventListener('resize',relayout);
+  window.addEventListener('orientationchange',relayout);
+  window.addEventListener('pageshow',relayout);
+  /* the page area can change size with no resize event (iPhone safe areas, fonts arriving) */
+  if(window.ResizeObserver){ var lastW=0,lastH=0; new ResizeObserver(function(){ if(view.clientWidth!==lastW||view.clientHeight!==lastH){ lastW=view.clientWidth; lastH=view.clientHeight; relayout(); } }).observe(view); }
   if(document.fonts&&document.fonts.ready) document.fonts.ready.then(function(){ layout(true); });
   layout(false);
 
