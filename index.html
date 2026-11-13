@@ -15,13 +15,13 @@
 <meta name="apple-mobile-web-app-title" content="Edition">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600;6..96,800&family=IBM+Plex+Sans+Condensed:wght@500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,600;6..72,700&family=IBM+Plex+Sans+Condensed:wght@500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
 <style>
 /* Layout: one screen, no scrolling. A fixed-height sheet whose content flows into
    screen-wide columns; each tap turns one column, like a page of a paper. */
 :root{
   --paper:#F2F4F3; --ink:#12171B; --muted:#5B666E; --rule:#C9D0D3; --accent:#1B4FD1; --wash:#E4E9EA;
-  --display:"Bodoni Moda","Didot","Georgia",serif;
+  --display:"Newsreader","Georgia","Times New Roman",serif;
   --body:"Source Serif 4","Georgia","Times New Roman",serif;
   --label:"IBM Plex Sans Condensed","Arial Narrow","Helvetica Neue",Arial,sans-serif;
   --fs:18px;
@@ -40,7 +40,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--body);overflow:h
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 
 .head{display:flex;align-items:center;gap:12px;padding-block:10px 8px;border-bottom:1px solid var(--rule)}
-.head .name{font-family:var(--display);font-weight:800;font-size:17px;letter-spacing:.01em;white-space:nowrap}
+.head .name{font-family:var(--display);font-weight:700;font-size:17px;letter-spacing:.01em;white-space:nowrap}
 .head .run{flex:1;min-width:0;font-family:var(--label);font-size:12px;letter-spacing:.09em;text-transform:uppercase;
   color:var(--muted);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .btn{font-family:var(--label);font-weight:600;font-size:14px;color:var(--ink);background:transparent;
@@ -56,7 +56,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--body);overflow:h
 .book .brk{break-before:column;-webkit-column-break-before:always}
 
 .kicker{font-family:var(--label);font-weight:600;font-size:.68em;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 .5em}
-h2{font-family:var(--display);font-weight:600;font-size:1.72em;line-height:1.12;margin:0 0 .45em;text-wrap:balance;break-after:avoid}
+h2{font-family:var(--display);font-weight:600;font-size:1.62em;line-height:1.16;margin:0 0 .45em;text-wrap:balance;break-after:avoid}
 .stand{font-style:italic;color:var(--muted);margin:0 0 .9em;break-after:avoid}
 p{margin:0 0 .85em;orphans:2;widows:2;hyphens:auto}
 .src{font-family:var(--label);font-size:.74em;color:var(--muted);margin:.8em 0 0;break-inside:avoid}
@@ -66,7 +66,7 @@ a{color:var(--accent);text-underline-offset:2px}
   border:1px solid var(--rule);border-radius:999px;padding:.45em .9em;cursor:pointer}
 .vote button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 
-.cover .mast{font-family:var(--display);font-weight:800;font-size:clamp(2.1em,11vw,3.4em);line-height:.95;margin:.1em 0 .25em;text-wrap:balance}
+.cover .mast{font-family:var(--display);font-weight:700;font-size:clamp(2.1em,11vw,3.4em);line-height:.95;margin:.1em 0 .25em;text-wrap:balance}
 .cover .dateline{font-family:var(--label);font-size:.74em;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
   border-block:1px solid var(--ink);padding:.55em 0;display:flex;gap:.4em 1em;flex-wrap:wrap;justify-content:space-between}
 .cover .note{background:var(--wash);padding:.7em .9em;margin:1em 0 0;font-size:.86em;border-radius:3px}
