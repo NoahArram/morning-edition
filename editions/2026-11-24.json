@@ -1,0 +1,183 @@
+{
+ "date": "2026-11-24",
+ "generatedAt": "2026-11-24T05:19:41Z",
+ "readMinutes": 9,
+ "note": "Eight stories. Several major outlets (BBC, Reuters, CNN, Bloomberg) could not be opened, so some stories rest on wire copy republished elsewhere or on a single source, as noted in each.",
+ "stories": [
+  {
+   "section": "Technology",
+   "headline": "Nvidia board reinstates Jensen Huang as chief executive; shares rise about 30 per cent at the open",
+   "standfirst": "The board says senior US government input satisfied it there is no national security risk, while federal, state and congressional inquiries continue.",
+   "body": [
+    "Nvidia's board voted unanimously on Monday 23 November to restore Jensen Huang as president, chief executive and a board director with immediate effect, according to the company's release. Colette Kress, who had served as interim chief executive, returns to her role as chief financial officer only. Harvey Jones remains board chair and said the board believes Huang is the right person to lead the company. Huang said he took the role back with humility and renewed commitment.",
+    "The release says the board received input from senior levels of the US government and, on that basis, is confident the reinstatement poses no national security risk. It repeats that Huang had been the target of a foreign intelligence effort. Fortune puts his removal about a week and a half earlier and reports that shares opened roughly 30 per cent higher on Monday, during a broad rally after the main US indexes entered correction territory the previous week; it gives no closing price.",
+    "The board's own inquiry, run by a committee of independent directors with outside counsel, will continue to its conclusion. Nvidia has also set up a National Security and Export Control Committee of independent directors and is recruiting a chief compliance officer.",
+    "Fortune lists the outside inquiries still open: an investigative subpoena from the California Attorney General's office over whether Nvidia or Huang helped China obtain advanced chips or confidential information, or misled investors; an SEC investigation of the company's disclosures; an FBI inquiry, according to President Trump, into Huang's relationship with Alice Huang of Megaspeed and any links to Chinese intelligence; and a Justice Department investigation, reported by Bloomberg, into whether entities linked to Alice Huang helped smuggle Super Micro products into China. Beijing rejects the allegations. Huang and Nvidia's general counsel are due before three House committees."
+   ],
+   "sources": [
+    {
+     "name": "Nvidia newsroom, board reinstates Jensen Huang",
+     "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
+    },
+    {
+     "name": "Fortune",
+     "url": "https://fortune.com/2026/11/23/nvidia-stock-jensen-huang-return-ceo-investigations-china-spy-scandal-fbi/"
+    }
+   ]
+  },
+  {
+   "section": "UK",
+   "headline": "Burnham tells MPs the EU deal is not a step towards rejoining as most post-Brexit food checks are set to end in March 2028",
+   "standfirst": "The Prime Minister said rejoining without a referendum would be unthinkable; retailers welcomed the food agreement but do not expect shelf prices to fall.",
+   "body": [
+    "Andy Burnham reported to the Commons on Monday on the package agreed at the UK-EU summit in Brussels on Friday 20 November. Its centrepiece is a sanitary and phytosanitary agreement that, according to PA, removes most post-Brexit checks on food and agricultural goods from 1 March 2028. The summit also covered emissions trading and a youth experience scheme, and Burnham said it opened the way to further talks on energy costs. MPs are due to vote on the European Partnerships Bill before the Christmas recess.",
+    "Earlier, at a Morrisons distribution centre in Kent, Burnham argued that cutting paperwork lowers costs and said the deal was not about rejoining. In the Commons he said there would be no 'banging on about Europe' and, pressed by the Conservative Sir Bernard Jenkin, agreed that rejoining without a referendum would be unthinkable. Sir Edward Leigh said the deal was a prelude to rejoining. Kemi Badenoch said six former prime ministers, Tony Blair among them, were living in the past, while Rishi Sunak and Theresa May urged against reopening the Brexit argument. Rachel Reeves and David Lammy congratulated him.",
+    "On prices, the British Retail Consortium called the agreement a big win for retailers but said it did not expect shelf prices to fall. The chief executives of Morrisons, Tesco and Asda praised the deal. Downing Street said it would lighten the load on shoppers but would not guarantee lower prices."
+   ],
+   "sources": [
+    {
+     "name": "PA via Bishop's Stortford Independent",
+     "url": "https://www.bishopsstortfordindependent.co.uk/national/andy-burnham-denies-new-deal-is-prelude-to-referendum-on-uk-s-return-to-eu-174655/"
+    },
+    {
+     "name": "dpa via Yahoo News",
+     "url": "https://www.yahoo.com/news/politics/articles/uks-burnham-says-eu-deal-133324402.html"
+    }
+   ]
+  },
+  {
+   "section": "World",
+   "headline": "Iran says it will use all available means against the US blockade as Trump says last week's drones and missiles were all shot down",
+   "standfirst": "Tehran calls the blockade military aggression under Article 51 of the UN Charter; a Qatari delegation held talks in Tehran on Friday.",
+   "body": [
+    "At his weekly briefing on Monday, Iran's foreign ministry spokesman Esmaeil Baqaei said Iran would use all available means to counter what he called US aggression, describing the US blockade as an act of military aggression and citing Article 51 of the UN Charter on self-defence, CBS News reports. Foreign Minister Abbas Araghchi said discussing the Strait of Hormuz was pointless while Iran's demands go unmet; Iran has said the strait could reopen within two days if Washington accepts them, including lifting the blockade.",
+    "President Trump wrote on Sunday that Iran had launched more drones and missiles in the past week than at any time in over a year, but that all were shot down without causing damage. In a Fox interview on Saturday he said he wants a permanent deal. Iran's deputy foreign minister Kazem Gharibabadi said a Qatari delegation held two hours of talks in Tehran on Friday evening.",
+    "CBS cites video from 17 November showing a tanker on fire in the strait off Oman, without naming the ship or giving casualties. The live page gives no oil price figures."
+   ],
+   "sources": [
+    {
+     "name": "CBS News live updates",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-blockade-strait-of-hormuz-ship-attacks/"
+    }
+   ]
+  },
+  {
+   "section": "World",
+   "headline": "Zelensky says Ukraine is ready for four-way talks with Russia, Europe and the US 'literally tomorrow'",
+   "standfirst": "He said partners want the meeting before Christmas; Germany's Merz has floated the UAE as a venue.",
+   "body": [
+    "Speaking by video to the NATO Parliamentary Assembly meeting at the Bundestag in Berlin on Monday, Volodymyr Zelensky called for four-party talks between Ukraine, Russia, Europe and the United States as soon as possible, AFP and Ukrinform report. He said partners wanted the meeting before Christmas, that Ukraine hoped for sooner, and that the US had agreed to bring the Europeans to the table. Ukrinform says he wants a common agenda agreed first.",
+    "According to Ukrinform, German Chancellor Friedrich Merz is open to the format and named the United Arab Emirates as a possible venue. AFP reports that US envoy Jared Kushner floated an Article 5-style security guarantee for Ukraine last week, and quotes NATO Secretary General Mark Rutte saying not all allies agree on Ukrainian membership. Neither report carries a Kremlin response, and neither gives a date or venue."
+   ],
+   "sources": [
+    {
+     "name": "AFP via The Korea Times",
+     "url": "https://www.koreatimes.co.kr/world/20261123/zelenskyy-calls-for-four-way-talks-with-russia-as-soon-as-possible"
+    },
+    {
+     "name": "Ukrinform",
+     "url": "https://www.ukrinform.net/rubric-polytics/4187617-ukraine-ready-for-fourparty-talks-to-end-war-as-early-as-tomorrow-zelensky.html"
+    }
+   ]
+  },
+  {
+   "section": "World",
+   "headline": "Likud and Eisenkot's Yashar party end second round of coalition talks without agreement",
+   "standfirst": "Eisenkot's bloc holds 48 of the 61 seats needed and has until 6 December, with a possible 14-day extension.",
+   "body": [
+    "Delegations from Benjamin Netanyahu's Likud and Gadi Eisenkot's Yashar met for four hours at a hotel in Herzliya on Sunday 22 November, the second round in a week, and parted without a deal, AFP reports. A joint statement said each side had set out its positions and that a further meeting would follow, with no date.",
+    "Likud wants a national unity government with a rotating premiership and sets conditions including no Arab parties, rejection of a Palestinian state, continued Israeli control over parts of Syria, Lebanon and Gaza, and a compromise on ultra-Orthodox conscription. Eisenkot refuses to serve under Netanyahu and has said he is ready to put an emergency government to the Knesset, possibly a minority administration supported from outside by Arab MKs, who hold a record 19 seats. Naftali Bennett rules out joining Netanyahu's bloc, and Avigdor Liberman rejects working with Arab parties."
+   ],
+   "sources": [
+    {
+     "name": "AFP via Malay Mail",
+     "url": "https://www.malaymail.com/news/world/2026/11/23/netanyahu-eisenkot-parties-end-talks-without-deal-on-forming-israel-govt/244368"
+    }
+   ]
+  },
+  {
+   "section": "Security",
+   "headline": "Exploited Cisco Expressway flaw CVE-2026-76466 gives unauthenticated root on clustered deployments; fix is X15.5.20",
+   "standfirst": "F6 reports attackers pivoting from edge nodes into internal clusters, then into SMB, SQL Server, WinRM and GitLab.",
+   "body": [
+    "CVE-2026-76466 is a critical flaw in the database service that Cisco Expressway cluster peers use to talk to each other, Help Net Security reports. An unauthenticated attacker with network access can run OS commands as root. Only clustered Expressway-C and Expressway-E deployments are affected. The article attributes the issue to the service relying on persistent cookies and to client certificates not being validated when cluster TLS verify mode is on. It gives no CVSS score or affected version range; the fix is to upgrade to X15.5.20 or later. CISA added the CVE to its Known Exploited Vulnerabilities catalogue on 20 November alongside VMware vCenter's CVE-2026-123890.",
+    "Russian security firm F6 reported the intrusion. Attackers compromised two internet-facing perimeter nodes, probably Expressway-E, then used one to reach two more cluster nodes inside the network. With root, they staged custom Python scripts to scan for SMB shares, interact with SQL Server and WinRM, and browse GitLab repositories for credentials and other data.",
+    "Where patching must wait, F6 advises limiting TCP 4371 to 4372 at the firewall to known cluster node addresses. Its indicators include source IPs 66.179.31.32 and 18.130.47.116, Python scripts under /mnt/harddisk/ in directories named i followed by four digits, and an Erlang log line recording nodeup for 'wombat@127.0.0.1'. Cisco's own advisory was not opened for this edition."
+   ],
+   "sources": [
+    {
+     "name": "Help Net Security",
+     "url": "https://www.helpnetsecurity.com/2026/11/23/cisco-expressway-vulnerability-exploited-cve-2026-76466/"
+    }
+   ]
+  },
+  {
+   "section": "AI",
+   "headline": "Z.ai ships GLM-5.4, a 750B looped model that runs 28 layers twice, for coding subscribers; no benchmark scores or weights yet",
+   "standfirst": "The second pass reuses the first pass's KV cache and attention indices, adding depth without extra parameters.",
+   "body": [
+    "Z.ai has released GLM-5.4 to GLM Coding Plan subscribers, in its ZCode tool and in Z.ai Chat, The Next Web reported on 23 November. The model has 750B parameters and loops 28 layers of the GLM-5 base twice, giving a deeper network with no added parameters. The second pass reuses the first pass's cache and attention indices and adds a small sliding window. Active parameter count and context length are not given.",
+    "Z.ai has published no benchmark scores. It says average output length fell by 10 to 14 per cent on GPQA-Diamond and MMLU-Pro, and claims the model matches systems of 2 to 3 trillion parameters without figures. Throughput is up to 200 tokens per second off-peak and 70 to 80 at peak. API access will follow a safety evaluation, and open weights are promised after safety hardening, with no licence named. Z.ai acknowledges the model can get stuck in very long reasoning loops."
+   ],
+   "sources": [
+    {
+     "name": "The Next Web",
+     "url": "https://thenextweb.com/news/zai-glm-5-4-loop-transformer-coding-model"
+    }
+   ]
+  },
+  {
+   "section": "Formula 1",
+   "headline": "Stewards say Hamilton gained a lasting advantage over Norris off track at Turn 7 in Las Vegas; Hamilton questions consistency with Leclerc's five-second Mexico penalty",
+   "standfirst": "The decision cites the driving standards guidelines but, in the reports read, no article number or penalty points.",
+   "body": [
+    "Motorsport Week reports the stewards' reasoning for Lewis Hamilton's 10-second penalty in the Las Vegas Grand Prix: defending against Lando Norris on approach to Turn 7, Hamilton left the track, gained a lasting advantage and did not give the place back as he should have. The decision cites the Driving Standards Guidelines and video, timing and in-car evidence. Motorsport Week puts the move on lap 12; Motorsport.com says around lap 13 at the Turn 7-8 chicane. Neither gives an article number or penalty points.",
+    "Motorsport.com reports an unaired radio message in which Hamilton complained that others got five seconds while he got ten for avoiding an incident. He named no one, but the article links it to the Mexico City Grand Prix on 1 November, where Charles Leclerc's off-track pass on Hamilton at Turn 4 drew five seconds, reduced from the 10-second guideline for mitigating factors. Max Verstappen also remarked on the change at the time. Motorsport Week describes Leclerc later pushing Hamilton into a spin in Las Vegas after a failed overtake and mentions no penalty; yesterday's edition reported, from other outlets, that Leclerc was penalised, so the sources conflict.",
+    "The next round is the Qatar Grand Prix at Lusail this weekend, a standard format with no sprint."
+   ],
+   "sources": [
+    {
+     "name": "Motorsport Week",
+     "url": "https://www.motorsportweek.com/2026/11/23/stewards-reveal-detail-of-lewis-hamilton-penalty/"
+    },
+    {
+     "name": "Motorsport.com",
+     "url": "https://www.motorsport.com/f1/news/hamilton-questions-stewards-consistency-over-unaired-las-vegas-radio-after-10-second-penalty/10876678/"
+    },
+    {
+     "name": "Formula1.com, Qatar Grand Prix timetable",
+     "url": "https://www.formula1.com/en/latest/article/formula-1-qatar-airways-qatar-grand-prix-2026.3XJyoYSnpJEcuZovstTdcG"
+    }
+   ]
+  }
+ ],
+ "today": [
+  "Wednesday 25 Nov: reported deadline in Poundland's rescue talks.",
+  "Wednesday 25 to Thursday 26 Nov: the BMA consultants' strike in England originally set for these dates was paused on 11 November for formal talks with the government.",
+  "Qatar Grand Prix, Lusail (UK times): FP1 Friday 27 Nov 13:30, FP2 17:00; FP3 Saturday 14:30, qualifying 18:00; race Sunday 29 Nov 16:00, 57 laps.",
+  "Sunday 6 Dec: Gadi Eisenkot's deadline to form an Israeli government, extendable by 14 days."
+ ],
+ "briefs": [
+  {
+   "text": "Poundland could go into administration if rescue talks fail by Wednesday 25 November, with about 12,000 jobs at risk, according to a UK business round-up.",
+   "source": {
+    "name": "CPA, UK business news 23 November",
+    "url": "https://cpa.co.uk/uk-business-news-today-23-november-2026-economy-markets-insolvencies/"
+   }
+  },
+  {
+   "text": "A Bibby Financial Services survey found 38 per cent of UK small businesses worried about high costs, 36 per cent about energy and 31 per cent about inflation.",
+   "source": {
+    "name": "CPA, UK business news 23 November",
+    "url": "https://cpa.co.uk/uk-business-news-today-23-november-2026-economy-markets-insolvencies/"
+   }
+  },
+  {
+   "text": "Houthi media said a Saudi strike on Hodeidah in Yemen killed four people and wounded 18 on Monday.",
+   "source": {
+    "name": "CBS News live updates",
+    "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-blockade-strait-of-hormuz-ship-attacks/"
+   }
+  }
+ ]
+}
