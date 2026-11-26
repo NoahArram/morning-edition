@@ -1,0 +1,296 @@
+{
+ "date": "2026-11-26",
+ "generatedAt": "2026-11-26T10:17:00Z",
+ "readMinutes": 15,
+ "stories": [
+  {
+   "section": "UK",
+   "headline": "Poundland collapses into administration, putting up to 12,000 jobs at risk across 600 stores",
+   "standfirst": "AlixPartners took control on 25 November after owner Gordon Brothers failed to conclude a solvent sale; stores remain open while in-store refunds end.",
+   "body": [
+    "Discount chain Poundland entered administration on 25 November after rescue talks failed to produce a solvent takeover before its extended notice of intention expired. Poundland confirmed that Clare Kennedy, Daniel Imison and Kevin Wall of AlixPartners UK LLP have been appointed joint administrators. The retailer operates roughly 600 shops across the UK and Ireland, where it trades as Dealz; The Independent puts the workforce at risk at around 11,000, while City A.M. reports nearly 12,000 employees.",
+    "Stores and Dealz branches will continue trading in the near term while administrators seek buyers for the whole business or packages of outlets. From 26 November, Poundland ended change-of-mind refunds and exchanges in store, and customers seeking refunds on earlier purchases under its former 28-day policy must lodge unsecured claims with AlixPartners. Statutory rights under the Consumer Rights Act 2015 remain in place for faulty goods bought from 26 November, though pre-administration claims are likewise unsecured.",
+    "US investment firm Gordon Brothers bought Poundland for £1 from Pepco early last year and closed more than 100 shops during a restructuring. Four suitors had held talks in recent days — Irish property group MPG, Xyra Group Holdings working with former BHS chief Tony Brown, Zachert Private Equity and Middle Eastern wholesaler Quality Premier Foods — with City A.M. reporting that Gordon Brothers rejected MPG offers over repayment of its £22.5m share of a £30m shareholder loan, even though Pepco offered to defer its £7.5m portion. Tesco, B&M, Lidl, Iceland and The Range have expressed interest in acquiring stores.",
+    "Prime Minister Andy Burnham called the collapse weeks before Christmas 'deeply concerning for workers and their families', and Business Secretary Jonathan Reynolds met executives on Monday. Usdaw national officer Bally Auluk criticised Gordon Brothers for failing to engage with the union, while MPs have summoned Gordon Brothers regional managing director Mark Newton-Jones to Parliament following earlier questioning by Business Select Committee chair Liam Byrne."
+   ],
+   "sources": [
+    {
+     "name": "Poundland",
+     "url": "https://www.poundland.co.uk/pages/urgent-updates"
+    },
+    {
+     "name": "The Independent",
+     "url": "https://www.independent.co.uk/news/business/poundland-andy-burnham-usdaw-jonathan-reynolds-government-b3091616.html"
+    },
+    {
+     "name": "City A.M.",
+     "url": "https://www.cityam.com/poundland-collapses-into-administration/"
+    }
+   ]
+  },
+  {
+   "section": "World",
+   "headline": "US proposes Section 301 excess-capacity tariffs of 15 to 35 per cent on 14 trading partners",
+   "standfirst": "USTR targets China, the EU, Japan, South Korea, Taiwan, India and eight other economies, with a 40 per cent fallback rate for China if talks stall.",
+   "body": [
+    "United States Trade Representative Jamieson Greer issued affirmative determinations on 25 November under Section 301(b) of the Trade Act of 1974 against 14 economies over structural excess manufacturing capacity, proposing broad import tariffs. The 14 economies are China, the European Union, Japan, South Korea, Taiwan, Switzerland, Singapore, India, Vietnam, Indonesia, Malaysia, Thailand, Cambodia and Bangladesh; determinations for Mexico and Norway, also included in the March probes, were deferred.",
+    "According to Wiley Rein's analysis of the draft Federal Register notices, proposed principal rates are 15 per cent for the EU, Japan, South Korea, Switzerland and Taiwan — offset by ordinary most-favoured-nation duties and July 2026 Section 301 forced-labour tariffs so duties do not fully stack — up to 18 per cent for Bangladesh, Cambodia, Indonesia, Malaysia and Thailand, up to 20 per cent for Singapore, up to 25 per cent for India and up to 35 per cent for Vietnam. For economies outside China, products covered by Section 232 tariffs on steel, aluminium, copper, vehicles, wood, patented pharmaceuticals and semiconductors are proposed for exemption.",
+    "Chinese imports face a three-tier structure reflecting the October 2025 Kuala Lumpur Joint Arrangement: up to 20 per cent combined with the existing 12.5 per cent forced-labour tariff on unlisted goods, an extra 10 per cent on Annex A goods, and exemptions on Annex B items, atop ordinary MFN and earlier technology-transfer Section 301 duties. USTR also floated fallback rates if bilateral talks stall — up to 40 per cent on all Chinese goods without exemptions, up to 20 per cent on the EU, Japan and Switzerland, and up to 25 per cent on South Korea and Taiwan — ahead of a 5 January 2027 comment deadline and 25 January Washington hearings."
+   ],
+   "sources": [
+    {
+     "name": "Office of the US Trade Representative",
+     "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural"
+    },
+    {
+     "name": "Wiley Rein",
+     "url": "https://www.wiley.law/alert-USTR-Announces-Affirmative-Section-301-Determinations-and-Proposes-New-Tariffs-on-14-Trading-Partners-to-Address-Structural-Excess-Capacity"
+    },
+    {
+     "name": "Taipei Times",
+     "url": "https://www.taipeitimes.com/News/front/archives/2026/11/26/2003868405"
+    }
+   ]
+  },
+  {
+   "section": "AI",
+   "headline": "Anthropic researchers and Claude compress formal Lean proof of Riemann Hypothesis by 99.5 per cent to 76,000 lines",
+   "standfirst": "Both readable and compact editions in lsernau/grh-lean passed six independent Lean checkers at MIT and Waterloo, though a full human paper remains unwritten.",
+   "body": [
+    "Anthropic researcher Luke Sernau, colleagues and Claude published a rewritten Apache 2.0 Lean 4 repository, lsernau/grh-lean, on 25 November shrinking Levent Alpöge's 20 November 17-million-line formal proof of the Riemann Hypothesis and Generalised Riemann Hypothesis for Dirichlet L-functions by 99.5 per cent. MIT mathematician Andrew Sutherland's verification log for commit 72fead10, completed on 26 November, records two editions on Lean v4.35.0 and Mathlib commit 56a00585: a readable edition (grh/) of 803 files and about 300,000 lines, and a compact edition (grh-compact/) of 794 files and about 76,000 lines; 36Kr Europe cites 801 and 792 files.",
+    "Both editions prove the exact five theorem statements from Alpöge's archive using only Lean's three standard axioms — propext, Classical.choice and Quot.sound — with no sorry placeholders outside Challenge.lean and no custom kernel options. Sandboxed builds took 32 minutes 12 seconds for the readable edition and 33 minutes 32 seconds for the compact edition on a 16-core AMD Ryzen AI Max+ 395 with 128 GB of RAM, against 21 hours on AWS for the original 175,187-file archive.",
+    "On a 192-core AWS r8a.48xlarge with 1.5 TB of memory, Sutherland's lake comparator --paranoid runs passed all six checkers — Lean's default and paranoid kernels, nanoda, lean4lean, con-leche and con-ron — in 2 hours 11 minutes for the compact edition (204,583 declarations; 5.17 GB export) and 4 hours 10 minutes for the readable edition (216,571 declarations; 4.49 GB export). For the readable build, lean4lean peaked at 332 GB of RAM and 2 hours 35 minutes, spending 2 hours 12 minutes on New.Variety.tiltTheory, whereas compact verification finished in 28 minutes 39 seconds using 7 GB. Waterloo's Michael Rubinstein independently verified the compact edition across all six kernels in five hours on 26 November.",
+    "Sernau said the compression came from unrolling definitions to flatten derivations across module boundaries before simplifying and re-encapsulating, alongside replacing detours such as Vandiver conjecture machinery. Both 36Kr Europe and Rubinstein note no mathematician has yet read the proof end to end; Rubinstein's 265-page working guide still leaves main inequality (M) unproved on paper."
+   ],
+   "sources": [
+    {
+     "name": "Andrew Sutherland, MIT",
+     "url": "https://math.mit.edu/~drew/shortgrh/"
+    },
+    {
+     "name": "Michael Rubinstein, University of Waterloo",
+     "url": "https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/"
+    },
+    {
+     "name": "36Kr Europe",
+     "url": "https://eu.36kr.com/en/p/4085937380043398"
+    }
+   ]
+  },
+  {
+   "section": "AI",
+   "headline": "Google mandates MCP servers or Workspace CLI for AI agents from 1 February 2027",
+   "standfirst": "General availability of hosted MCP servers, the Workspace CLI and Cloud Agent Gateway pairs protocol enforcement with Scaled tier billing from April.",
+   "body": [
+    "Google has moved its hosted Workspace Model Context Protocol (MCP) servers, official Workspace CLI and Google Cloud Agent Gateway to general availability, alongside a Workspace AI Tools Addendum requiring AI agents to stop calling Workspace REST APIs directly. Technical enforcement begins on 1 February 2027, while conventional non-agent applications may continue using existing REST endpoints. Workspace APIs currently process more than 2.8 trillion calls a month, including over 18 billion daily Google Drive reads.",
+    "The managed MCP servers cover Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat and Tasks, with Keep planned, while the Workspace CLI targets local terminals, virtual machines and containerised sandboxes with JSON output and scoped OAuth sign-in. External agents must register dedicated OAuth 2.0 client IDs flagged with is_agentic; MCP servers reject non-agent clients and apply Workspace permissions, data loss prevention policies, classification labels and human-in-the-loop confirmation prompts for sending mail, altering Drive sharing or making bulk edits. On Google Cloud, Agent Gateway mediates LLM, MCP and Agent2Agent traffic using Agent Registry identities, default-deny outbound rules and Model Armor prompt-injection screening.",
+    "Standardised usage tiers launch first for Gmail, Drive and Calendar, with a free Standard tier covering over 99 per cent of active developers and paid Scaled tier billing starting on 1 April 2027; internal-only Workspace projects remain covered by existing subscriptions. According to Help Net Security, the addendum bans permanent raw data storage, model training and API scraping, and imposes a 30-day retention cap on derived technical data including vector embeddings, memory indexes and organisational graphs."
+   ],
+   "sources": [
+    {
+     "name": "Google Workspace Updates",
+     "url": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html"
+    },
+    {
+     "name": "Google Cloud Blog",
+     "url": "https://cloud.google.com/blog/products/identity-security/deploying-agents-safely-in-your-enterprise"
+    },
+    {
+     "name": "Help Net Security",
+     "url": "https://www.helpnetsecurity.com/2026/11/26/google-ai-agent-security-requirements/"
+    }
+   ]
+  },
+  {
+   "section": "Formula 1",
+   "headline": "FIA cuts Williams aero testing by 1.5 per cent for 2025 cost cap overspend; Alpine fined for procedural breach",
+   "standfirst": "Williams exceeded the 2025 cap by £627,000, or 0.48 per cent, over corporate restructuring costs while nine teams and all five power unit makers complied.",
+   "body": [
+    "The FIA completed its eight-month review of 2025 Formula 1 Financial Regulations compliance on 25 November, finding Williams Grand Prix Engineering in minor overspend and procedural breach and Alpine Racing Limited in procedural breach only. Nine of the 11 teams — including McLaren — and all five power unit manufacturers complied under the 2025 limits of $135m for teams and $130m for engine makers plus inflation.",
+    "Williams entered an Accepted Breach Agreement dated 23 November under Article D8.10.1 of Section D after exceeding the 2025 cap by £627,000, or 0.48 per cent — inside the sub-5 per cent minor overspend band. Alongside an undisclosed fine due within 30 days and Cost Cap Administration expenses, Williams loses 1.5 per cent of its aerodynamic testing allowance for 12 months through 23 November 2027. Motorsport.com reports this trims its wind tunnel allocation from 336 to 331 hours on a 105 per cent baseline and from 352 to 347 hours on a 110 per cent baseline in early 2027 if it finishes ninth. Williams attributed the breach to corporate restructuring administrative costs.",
+    "Alpine's relevant costs stayed below the cap, but its 11 November agreement covers inaccurate exclusions and adjustments across marketing, non-F1 operations, HR, employee bonuses, tax credits, finance income and inventories, drawing an undisclosed fine payable by 12 December plus investigation costs. The FIA stated neither team gained nor sought a sporting advantage."
+   ],
+   "sources": [
+    {
+     "name": "FIA (Williams ABA)",
+     "url": "https://www.fia.com/news/accepted-breach-agreement-between-williams-grand-prix-engineering-limited-and-fia-breach-fia"
+    },
+    {
+     "name": "FIA (Alpine ABA)",
+     "url": "https://www.fia.com/news/accepted-breach-agreement-between-alpine-racing-limited-and-fia-procedural-breach-fia-formula-1"
+    },
+    {
+     "name": "Formula1.com",
+     "url": "https://www.formula1.com/en/latest/article/fia-confirm-williams-minor-overspend-breach-in-2025-cost-cap-review.12rGorQ1pzc6aH0LX2WdLZ"
+    },
+    {
+     "name": "Motorsport.com",
+     "url": "https://www.motorsport.com/f1/news/williams-breaches-2025-f1-cost-cap-reveals-penalty/10877740/"
+    },
+    {
+     "name": "The Race",
+     "url": "https://www.the-race.com/business/williams-and-alpine-breached-f1s-cost-cap-in-2025/"
+    }
+   ]
+  },
+  {
+   "section": "Technology",
+   "headline": "Kioxia unveils 18-million-IOPS PCIe 6.0 GP2 SSD and 1.1 PB GPU memory tier with Nvidia SCADA",
+   "standfirst": "Generation 3 XL-FLASH cuts average read latency to 3 microseconds as a GB200 NVL72 proof of concept processes a 2-trillion-vector database.",
+   "body": [
+    "Kioxia announced its GP2 Series Super High IOPS SSD on 26 November alongside a joint Nvidia proof of concept extending effective GPU memory to petabyte scale. Built for direct GPU access under PCIe 6.0 and NVMe 2.3, GP2 targets over 18 million random read IOPS at 512-byte blocks — nearly double August's GP1 and roughly 2.5 times Kioxia's CM10 TLC SSD — and up to 28 GB/s sequential read, saturating PCIe 6.0 x4. Planned in E1.S 9.5 mm and E3.S form factors with direct liquid cooling and up to 50 drive writes per day endurance, samples arrive late 2027, with future generations targeting 100 million IOPS.",
+    "GP2 uses Kioxia's XL-FLASH Generation 3 memory, showcased at Kioxia Forum in Tokyo on 26 November. Using CMOS directly Bonded to Array architecture, Generation 3 boosts bit density roughly 70 per cent over Generation 2, cuts average read latency to 3 microseconds — under a tenth of BiCS FLASH Gen 8 1Tb TLC — and improves 512-byte read power efficiency by about 135 per cent, with samples due in March 2027.",
+    "Separately, Kioxia and Nvidia detailed a Storage-Next demonstration pairing Nvidia's Scaled Accelerated Data Access (SCADA) software with 144 Kioxia XD8 7.68 TB E1.S NVMe SSDs across 18 GB200 NVL72 nodes, providing 1.1 PB of raw flash — nearly 60 TB per node — to process a 2-trillion-vector database using 512-byte accesses."
+   ],
+   "sources": [
+    {
+     "name": "Kioxia Corporation",
+     "url": "https://www.kioxia.com/en-jp/business/news/2026/20261126-2.html"
+    },
+    {
+     "name": "Kioxia Europe",
+     "url": "https://europe.kioxia.com/en-europe/business/news/2026/20261125-1.html"
+    },
+    {
+     "name": "Business Wire via NewsFilter",
+     "url": "https://newsfilter.io/articles/kioxia-and-nvidia-collaborate-to-expand-effective-high-bandwidth-memory-capacity-5a8c03cadb285b1fbfe8008fda686c15"
+    }
+   ]
+  },
+  {
+   "section": "Technology",
+   "headline": "JetBrains releases Go by GoLand LSP public preview for VS Code and Cursor",
+   "standfirst": "The free beta brings GoLand's whole-project analysis, inspections and Delve debugging outside the IntelliJ Platform via LSP and DAP.",
+   "body": [
+    "JetBrains launched a public preview of Go by GoLand on 25 November, packaging its GoLand language engine as a Language Server Protocol and Debug Adapter Protocol extension for Visual Studio Code, Cursor and compatible editors. It is the first time GoLand's semantic indexing, inspections and refactorings have shipped outside the IntelliJ Platform, offering a direct alternative to the Go team's gopls server.",
+    "The preview automatically imports Go modules, Go workspaces and vendored dependencies across subdirectories to support cross-module go-to-definition, find-usages, call and type hierarchies, data-flow inspections with quick-fixes, safe rename and move refactorings, test runners with a separate fuzzing profile, and debugging attached to Delve. JetBrains requires users to disable the official Go extension to avoid duplicate diagnostics. Each preview build expires 30 days after release, with commercial licensing planned for version 1.0.",
+    "JetBrains reports vendor benchmarks on a 93-million-line repository spanning 34 modules showing 11 ms go-to-definition latency, 13 seconds to locate every implementation across all 34 modules and 833 MiB of memory consumption. Citing its 2026 developer survey — which found 98.2 per cent of Go developers use coding agents and 82 per cent span two or more surfaces — JetBrains said it is also adapting the server for direct agent use after internal benchmarks with Netflix cut agent token consumption and completion time."
+   ],
+   "sources": [
+    {
+     "name": "The JetBrains Blog",
+     "url": "https://blog.jetbrains.com/go/2026/11/25/go-by-goland-public-preview/"
+    },
+    {
+     "name": "JetBrains Documentation",
+     "url": "https://www.jetbrains.com/help/go-lsp/About-go-by-goland.html"
+    }
+   ]
+  },
+  {
+   "section": "AI",
+   "headline": "Coalition of 42 US states and DC moves to block Character.AI bankruptcy auction of 21 million users' chats",
+   "standfirst": "Attorneys general object to a 1 December sale to newly formed Delaware entity Smirks and Pangs Acquisition LLC with no privacy obligations.",
+   "body": [
+    "A bipartisan coalition of 42 US state attorneys general and the District of Columbia has intervened in Character.AI's Chapter 11 bankruptcy to halt a 1 December auction of its platform and user dataset. According to filings described by TechCrunch and Connecticut Attorney General William Tong, the assets for sale include private chat logs, IP addresses, location metadata and internal safety risk scores tied to more than 21 million US accounts, including over 2.1 million registered to minors.",
+    "Character.AI, which filed for bankruptcy in October following child-safety lawsuits and the departure of co-founders Noam Shazeer and Daniel De Freitas to Google, previously stated in its privacy policy that it does not sell personal information for monetary consideration. The states argue the proposed sale imposes no obligation on buyers to honour that policy, delete data on request or refrain from reselling records that include explicit conversations and chats with 'therapist' and 'physician' bots covering self-harm and suicide.",
+    "The sole disclosed stalking-horse bidder, Smirks and Pangs Acquisition LLC, was incorporated in Delaware on 13 November and chosen as the base bid one day later. Connecticut's filing notes the contract discloses no parent company or investors, permits foreign investors revealed only to Character.AI, includes a $350,000 break-up fee and obligates the buyer to hire only Character.AI's chief legal officer. The coalition — which also opposed a separate $20m Disney IP licensing deal — cites federal under-13 privacy law and state chatbot safety statutes taking effect on 1 January 2027 in California, Colorado, New York and Connecticut."
+   ],
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/"
+    },
+    {
+     "name": "Office of the Connecticut Attorney General",
+     "url": "https://portal.ct.gov/ag/press-releases/2026-press-releases/attorney-general-tong-challenges-plan-to-auction-off-character-ai-private-chats"
+    }
+   ]
+  },
+  {
+   "section": "Science",
+   "headline": "ESA's Hera reveals stadium-sized DART crater, chaotic tumbling and orbiting boulder field at Dimorphos",
+   "standfirst": "First close-up images from 29 to 30 km show one side of the 151-metre moonlet flattened and over 100 newly spotted boulders posing navigation risks.",
+   "body": [
+    "The European Space Agency and German Aerospace Center (DLR) released the first close-up images from the Hera planetary defence spacecraft on 25 November, two years after launch and four years after NASA's 570 kg DART probe rammed the asteroid moonlet Dimorphos at over 22,000 km/h. Captured at 29 to 31.6 km — giving roughly 2.7 to 3 metres per pixel resolution — by Hera's monochrome Asteroid Framing Camera, the images show that DART flattened one entire face of the 151-metre moonlet into a stadium-sized impact crater spanning its width, with an elongated central mound inside.",
+    "While the 730-metre primary asteroid Didymos and the opposite hemisphere of Dimorphos appear largely unaltered, DART broke Dimorphos out of its synchronous spin-orbit lock, leaving it tumbling chaotically around Didymos in an orbit shortened by 33 minutes from 11 hours 55 minutes. Stacked observations also revealed more than 100 previously unseen boulders, from football to washing-machine size, orbiting up to 7 to 10 km from the binary pair, currently 193.5 million km from Earth.",
+    "Hera is flying rectangular thruster-controlled orbits at 12 cm/s using its framing camera, 25-colour Hyperscout H spectrometer and JAXA's TIRI thermal imager. Mission safety officials told reporters in Berlin the debris field was unexpected because the shoebox-sized Juventas radar CubeSat and Milani prospecting CubeSat, scheduled for deployment in January 2027 after Hera closes to 13 km in December, have planned trajectories 2 to 3 km from the system and may require trajectory adjustments."
+   ],
+   "sources": [
+    {
+     "name": "ESA",
+     "url": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/hera-reveals-stadium-sized-asteroid-crater-left-after-spacecraft-impact"
+    },
+    {
+     "name": "DLR",
+     "url": "https://www.dlr.de/en/latest/news/2026/asteroid-defence-hera-spacecraft-reaches-its-destination"
+    },
+    {
+     "name": "Sky & Telescope",
+     "url": "https://skyandtelescope.org/astronomy-news/hera-images-dimorphos-unveiled/"
+    }
+   ]
+  },
+  {
+   "section": "World",
+   "headline": "Israel's Eisenkot clinches coalition pact with Liberman as Knesset advances prime ministerial term-limit bill",
+   "standfirst": "Yisrael Beytenu secures defence and justice portfolios while Likud appeals results from 120 polling stations ahead of the 6 December deadline.",
+   "body": [
+    "Gadi Eisenkot's centrist Yashar party has secured its first formal coalition agreement since Israel's 27 October election, striking a deal with Avigdor Liberman's right-wing Yisrael Beytenu, Reuters and The Jerusalem Post report. Under the reported allocation, Liberman's seven-seat party will receive three ministries — defence, justice, and aliyah and integration — while Yashar and the ultra-Orthodox United Torah Judaism party agreed on a religion-and-state status quo freeze.",
+    "The Jerusalem Post reported on 26 November that Likud officials now expect Eisenkot to assemble a government without Benjamin Netanyahu's party, with one source saying roughly 75 per cent of coalition terms are finalised as Yashar and the eight-seat Democrats resumed marathon talks after an earlier suspension. Netanyahu's bloc holds 53 of the Knesset's 120 seats (including 27 for Likud), against 48 for Eisenkot's change bloc (21 for Yashar, 12 for Naftali Bennett's B'Yachad) and 19 for Arab parties. Eisenkot's 28-day mandate runs until 6 December, with a possible 14-day extension.",
+    "Separately, the Knesset passed by 65 votes to 48 the preliminary reading of a bill limiting consecutive prime ministerial service to eight years and restricting indicted legislators from forming a government. Likud filed an appeal seeking to cancel results from 120 polling stations over alleged ballot-secrecy breaches and petitioned a court to order police, Shin Bet, the attorney general and the Central Elections Committee to release election footage."
+   ],
+   "sources": [
+    {
+     "name": "The Jerusalem Post",
+     "url": "https://www.jpost.com/israel-election-2026/2026-11-26/live-updates-916169"
+    },
+    {
+     "name": "The Hindu (Reuters)",
+     "url": "https://www.thehindu.com/news/international/israels-eisenkot-clinches-first-coalition-agreement-in-bid-to-form-government/article71740200.ece"
+    }
+   ]
+  }
+ ],
+ "today": [
+  "Thursday 26 November: Qatar Grand Prix FIA drivers' press conferences at Lusail (14:30 and 15:00 UK time; Oscar Piastri in Group 2); McLaren enters round 22 nine points behind Red Bull for third in the Constructors' Championship.",
+  "Qatar Grand Prix, Lusail (UK times): FP1 Friday 27 Nov 13:30, FP2 17:00; FP3 Saturday 28 Nov 14:30, qualifying 18:00; race Sunday 29 Nov 16:00 (57 laps).",
+  "Tuesday 1 December: Scheduled Chapter 11 bankruptcy auction for Character.AI's platform and 21 million user chat histories, contested by 42 US states and DC.",
+  "Thursday 3 December: EU competition ministers consider Ireland's 'Made in Europe' compromise granting UK car assembly partner status.",
+  "Sunday 6 December: Gadi Eisenkot's 28-day mandate to form an Israeli coalition government expires, extendable by 14 days."
+ ],
+ "briefs": [
+  {
+   "text": "The House of Lords Science and Technology Committee warned on 26 November that the NHS innovation adoption system for AI and personalised medicine is broken, citing raided trust budgets, fragmented procurement and a Health Data Research Service with no published strategy after more than a year.",
+   "source": {
+    "name": "Research Agenda",
+    "url": "https://www.researchagenda.news/articles/the-nhs-innovation-system-is-broken-warn-peers.html"
+   }
+  },
+  {
+   "text": "Bank of England Deputy Governor Clare Lombardelli told Parliament's Treasury Committee on 25 November that UK food price inflation is still expected to rise to around 5 per cent next year and that she sees higher risks of second-round inflation effects.",
+   "source": {
+    "name": "FXStreet",
+    "url": "https://www.fxstreet.com/news/boes-lombardelli-sees-greater-risk-of-second-round-inflation-202611251517"
+   }
+  },
+  {
+   "text": "Non-proliferation directors from 34 countries — including the UK, Canada, Japan and Sweden — and the European Union issued a joint OPCW statement in The Hague on 25 November demanding Russia halt battlefield use of riot-control agents such as CS and CN gas after Ukraine documented 14,000 incidents.",
+   "source": {
+    "name": "The Kyiv Independent",
+    "url": "https://kyivindependent.com/over-30-countries-demand-russia-stop-using-chemical-agents-as-weapons-of-war-in-ukraine/"
+   }
+  },
+  {
+   "text": "Overnight Israeli airstrikes on 26 November killed eight Palestinians in Gaza — including Hamas economic and education official Khaled Abu Nada according to Israeli officials — while UKMTO reported an unknown projectile exploding near a tanker 93 km west of Dubai with no damage or crew injuries.",
+   "source": {
+    "name": "Associated Press via WSLS",
+    "url": "https://www.wsls.com/news/world/2026/11/26/israeli-strikes-kill-8-in-gaza-and-other-mideast-news/"
+   }
+  },
+  {
+   "text": "Haas confirmed on 26 November that British driver Oliver Bearman will remain with the team for a third full season in 2027 alongside fellow Ferrari junior Rafael Camara, completing next year's Formula 1 grid ahead of the Qatar Grand Prix.",
+   "source": {
+    "name": "Formula1.com",
+    "url": "https://www.formula1.com/en/latest/article/bearman-to-continue-with-haas-for-2027-as-he-completes-next-years-grid.dRq9fWh9OGjhXuShgGnqE"
+   }
+  },
+  {
+   "text": "The Met Office and BBC launched their new long-term weather partnership on 26 November alongside UK climate data showing 25°C summer days more than doubled from 4.3 (1961 to 1990) to 8.9 (2016 to 2025) while winter air-frost days fell from 38.0 to 28.1.",
+   "source": {
+    "name": "Met Office",
+    "url": "https://www.metoffice.gov.uk/about-us/news-and-media/media-centre/weather-and-climate-news/2026/new-partnership-widens-weather-forecast-reach-in-a-changing-climate"
+   }
+  }
+ ]
+}
