@@ -1,0 +1,305 @@
+{
+ "date": "2026-11-28",
+ "generatedAt": "2026-11-28T05:08:30Z",
+ "readMinutes": 14,
+ "stories": [
+  {
+   "section": "UK",
+   "headline": "'Serious cyber incident' knocks DWP online pensions and benefits systems offline",
+   "standfirst": "The Department for Work and Pensions shut down public portals late on Thursday with GCHQ's cyber centre investigating, though regular payments remain unaffected.",
+   "body": [
+    "The Department for Work and Pensions took almost all of its public-facing online pensions and welfare portals offline late on Thursday 26 November after detecting unusual activity, leaving millions of claimants unable to log in on Friday. The Guardian, The Independent and BCS report the outage blocked access to Universal Credit journals for 8.4 million claimants, State Pension checks, Personal Independence Payment applications, the Pension Credit checker and the Tell Us Once bereavement service.",
+    "Work and Pensions Secretary Pat McFadden described the event as a 'serious cyber incident' and said taking systems down early protected personal data. Regular benefit and pension payments were unaffected because payment files had already been dispatched earlier in the week, though DWP insiders told The Guardian tens of thousands of manual payments due early next week would be processed over the weekend. Internal DWP systems were restored on Friday while the public portal stayed offline, and DWP confirmed claimants unable to update circumstances or attend cancelled JobCentre appointments would not face sanctions.",
+    "DWP said it is working with GCHQ's National Cyber Security Centre (NCSC) and the Government Cyber Coordination Centre, while urging claimants to ignore phishing texts or emails. Downing Street said there was no evidence of customer data loss or targeting of other departments, though No 10 declined to rule out a malicious actor, and the Information Commissioner's Office is in contact with DWP. Former government chief technology officer David Knott told BBC Newsnight the official terminology pointed strongly towards an attack, while Commons Science and Technology Committee chair Dame Chi Onwurah called the outage a 'wake-up call' over public-sector digital resilience."
+   ],
+   "sources": [
+    {
+     "name": "GOV.UK",
+     "url": "https://www.gov.uk/government/news/temporary-disruption-to-some-dwp-online-services"
+    },
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/politics/2026/nov/27/dwp-cyber-incident-pensions-benefits-systems-offline"
+    },
+    {
+     "name": "The Independent",
+     "url": "https://www.independent.co.uk/news/uk/politics/dwp-hack-cyber-attack-offline-b3092591.html"
+    },
+    {
+     "name": "BCS",
+     "url": "https://www.bcs.org/articles-opinion-and-research/cyber-incident-takes-key-dwp-services-offline/"
+    }
+   ]
+  },
+  {
+   "section": "Security",
+   "headline": "Hackers breach US Air Force's multi-cloud Cloud One control plane, pausing app migrations",
+   "standfirst": "Intruders exploited a software flaw to reach the management layer of the military hub linking AWS, Azure, Oracle and Google Cloud, prompting a Cyber Command review.",
+   "body": [
+    "Hackers breached the US Air Force's flagship multi-cloud platform, Cloud One, exploiting an undisclosed software vulnerability to reach its control plane, Reuters reports via Defense News, The Guardian, CBS News and Engadget. Discovered within the past month during system upgrade work, the intrusion prompted the military to call in US Cyber Command to assess the damage, though officials have not confirmed the attackers' identity or whether data was exfiltrated.",
+    "Established in 2017 and operated by prime contractor Leidos since May 2025 under a $454.9m modernisation contract, Cloud One integrates Amazon Web Services, Microsoft Azure, Oracle Cloud Infrastructure and Google Cloud for payroll, personnel, maintenance and operational workloads. It hosts the Cloud-Based Command and Control system, which aggregates North American air-defence radar feeds, and the Theater Integrated Combat Munitions System tracking bombs and missiles across more than 200 Air Force sites worldwide. One source likened control-plane access to a 'universal remote' capable in theory of inspecting aircraft readiness and spare-parts movements.",
+    "According to Reuters, the breach halted migrations of back-office applications to Cloud One, led to revoked administrator privileges and blocked updates to live applications, leaving teams unable to deploy patches for newly disclosed software flaws. Both the Air Force and Pentagon declined to detail vulnerabilities, stating critical missions continue. The intrusion follows a wave of federal incidents this month at the FBI, CIA and Office of the Director of National Intelligence, Treasury, Department of Agriculture and the NSA, whose internal network went offline for urgent PHP patching."
+   ],
+   "sources": [
+    {
+     "name": "Defense News (Reuters)",
+     "url": "https://www.defensenews.com/pentagon/2026/11/27/hackers-breach-us-air-force-flagship-cloud-one-computing-platform/"
+    },
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/technology/2026/nov/27/hackers-breach-us-air-force-cloud-computing"
+    },
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/u-s-air-force-cloud-platform-breached-by-hackers/"
+    },
+    {
+     "name": "Engadget",
+     "url": "https://www.engadget.com/2329586/hackers-reportedly-infiltrated-the-air-force-cloud-systems/"
+    }
+   ]
+  },
+  {
+   "section": "UK",
+   "headline": "Bank of England warns 430,000 UK homeowners face £500-plus monthly mortgage jump",
+   "standfirst": "Its Financial Stability Report doubles July's repayment-shock estimate as Iran-war inflation pushes rates up, while flagging single-cloud, AI and quantum risks.",
+   "body": [
+    "Around 6.5 million of the seven million UK borrowers due to exit fixed-rate mortgages before December 2029 will face higher monthly payments — roughly double the Bank of England's July projection — the Financial Policy Committee warned in its Financial Stability Report. About 3.4 million households face rises below £100 a month, 2.7 million face £100 to £500, and roughly 430,000 face increases exceeding £500 a month over the next three years.",
+    "The Independent reports that over one million borrowers coming off sub-3 per cent fixes before the end of 2027 face average rises of nearly £200 a month on to an average 5.5 per cent rate, with Moneyfacts putting average five-year residential fixes at 6 per cent on 26 November. Policymakers raised Bank Rate from 3.75 per cent to 4 per cent earlier this month amid energy-driven inflation from the Middle East war, and markets price three quarter-point hikes by summer 2027. Deputy Governor Sarah Breeden said household debt stands at early-2000s lows and increases should be 'absorbable' in aggregate, as the Bank moved to cut lender capital requirements to unlock up to £175bn in credit capacity.",
+    "Alongside debt pressures, Governor Andrew Bailey warned that recent Microsoft and Google Cloud outages showed how disruption at a single cloud provider can hit many financial firms simultaneously. He also highlighted risks from cheaper Chinese open-weight AI models whose safeguards can be stripped, and urged banks to prepare defences against emerging quantum computing threats to financial cryptography."
+   ],
+   "sources": [
+    {
+     "name": "The Independent",
+     "url": "https://www.independent.co.uk/news/business/bank-of-england-interest-rates-mortgages-uk-b3092208.html"
+    },
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/money/2026/nov/26/430000-uk-homeowners-500-jump-monthly-mortgage-payments-bank-of-england-interest-rates"
+    }
+   ]
+  },
+  {
+   "section": "World",
+   "headline": "US disables blockade-runner Pacific Archer in Gulf of Oman as Iran vows to keep Hormuz closed",
+   "standfirst": "CENTCOM says Thursday's strike on the Bandar Abbas departure is the sixth vessel disabled since July, while Tehran's unofficial exchange rate tops 2.93 million rials.",
+   "body": [
+    "US Central Command released video on Friday 27 November showing a US military aircraft disabling the Palau-flagged bulk carrier M/V Pacific Archer in the Gulf of Oman the previous day after it departed the Iranian port of Bandar Abbas and ignored repeated warnings. Precision munitions struck the ship's stern to disable propulsion without injuring its civilian crew, CENTCOM said.",
+    "Pacific Archer is the sixth commercial vessel disabled since Washington resumed its naval blockade of Iranian ports in July — following the cargo ship Huda on 7 November — while 158 vessels have complied with orders to divert, according to CENTCOM. It is also the first vessel reported disabled since Iranian officials including Foreign Minister Abbas Araghchi and Supreme National Security Council secretary Mohsen Rezaei declared the blockade must be broken, though CENTCOM gave no indication the ship was linked to a proposed Iran-to-China oil tanker convoy.",
+    "On Friday, Mohammad Mokhber, adviser to Supreme Leader Mojtaba Khamenei, said the Strait of Hormuz would stay closed and Iran would block the US embargo from holding. Economic strain continued inside Iran as the dollar passed 2.93 million rials on the unofficial market and Central Bank Governor Abdolnaser Hemmati acknowledged the blockade and sanctions were squeezing revenue and consumer prices. Separately, Iran International reports Iraq closed the Sheikh Saleh and Bashta border crossings with Iran on Thursday under US Treasury pressure to leave only two open."
+   ],
+   "sources": [
+    {
+     "name": "Iran International",
+     "url": "https://www.iranintl.com/en/202611274132"
+    },
+    {
+     "name": "Anadolu Agency",
+     "url": "https://www.aa.com.tr/en/americas/us-disables-bulk-carrier-in-gulf-of-oman-says-central-command/4140785"
+    }
+   ]
+  },
+  {
+   "section": "World",
+   "headline": "Zelenskyy rebukes Trump over 'friend' remark as Ukraine proposes Black Sea ceasefire and deploys laser air defence",
+   "standfirst": "Kyiv conveyed maritime truce terms via India, Turkey and Egypt while confirming a first combat drone shoot-down with its experimental Blysk laser system.",
+   "body": [
+    "Ukrainian Foreign Minister Andrii Sybiha announced at the Food from Ukraine conference in Kyiv on Friday 27 November that Ukraine has submitted proposals to allies for a Black Sea ceasefire to protect grain and agricultural exports, effectively reviving the maritime corridor Russia exited in July 2023. Suspilne and RFE/RL report Sybiha credited India, Turkey and Egypt for mediation efforts and said Kyiv was awaiting Moscow's reply, adding Ukraine would consider Russia's demand to halt strikes on its oil sector only as part of a broader energy ceasefire.",
+    "In a BBC interview broadcast on Friday, President Volodymyr Zelenskyy criticised US President Donald Trump for calling Vladimir Putin 'my friend' following their summit in Shenzhen last week. Calling the wording 'strange', Zelenskyy said Putin is 'an aggressor, and a killer' and likened calling him a friend to describing Adolf Hitler that way during the second world war, urging Washington to increase pressure on Moscow.",
+    "On the battlefield, Ukraine's state defence cluster Brave1 confirmed to AFP on Friday that a private air-defence unit backed by a Brave1 grant used a laser weapon to shoot down a Russian jet-powered Geran drone for the first time, though it cautioned the experimental technology is not ready for mass deployment. Presidential adviser Serhiy Beskrestnov named the system Blysk, built by Carmine Sky. Ukraine also reported striking a solid ballistic-missile propellant plant in Russia's Tula region overnight, while Reuters reported a Golovko-escorted Russian military convoy bound for Libya turned back near the Strait of Sicily after Ukrainian naval drones sank the corvette Merkury in Benghazi."
+   ],
+   "sources": [
+    {
+     "name": "The Guardian",
+     "url": "https://www.theguardian.com/world/2026/nov/28/ukraine-war-briefing-zelenskyy-criticises-trump-for-calling-putin-his-friend-kyiv-deploys-new-laser-weapon"
+    },
+    {
+     "name": "RFE/RL",
+     "url": "https://www.rferl.org/a/ukraine-black-sea-ceasefire-russia-shipping-exports/33907217.html"
+    }
+   ]
+  },
+  {
+   "section": "AI",
+   "headline": "OpenAI countersues Apple over unreleased AI hardware secrets and supplier pressure",
+   "standfirst": "Filed in San Jose with io Products, the counterclaim alleges a returning engineer exfiltrated over 100 files and Apple coerced shared manufacturing vendors.",
+   "body": [
+    "OpenAI Group and its hardware subsidiary io Products — acquired from former Apple design chief Jony Ive in July 2025 — filed counterclaims against Apple in federal court in San Jose on Friday 27 November, joined by former Apple hardware staffers Tang Yew Tan and Chang Liu. Seeking damages and a jury trial, OpenAI accuses Apple of 'unlawful, tortious, and unfair business practices' to slow its push into consumer AI devices.",
+    "The filing alleges a former Apple engineer identified as 'Employee X' sent more than 100 confidential files covering device designs, manufacturing test data and supplier details to personal accounts during a six-month stint at OpenAI ending on 2 June before returning to Apple and briefing senior Asia-Pacific operations staff in July. OpenAI also claims Apple coerced shared suppliers — forcing one metal-finishing vendor to move OpenAI parts to an overnight shift and pressuring another manufacturer to drop planned OpenAI work — and encouraged employees to use personal iCloud and iMessage accounts to create a 'trap' for departing staff. Liu separately alleged Apple accessed his private messages without permission.",
+    "Apple, which sued OpenAI, io Products, Tan and Liu on 10 July alleging misappropriation of its own hardware secrets, dismissed the counterclaims as a 'transparent attempt to distract', noting OpenAI is already under court order not to use Apple confidential information and saying earlier searches found no OpenAI material."
+   ],
+   "sources": [
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/openai-countersues-apple-trade-secrets-lawsuit/"
+    },
+    {
+     "name": "Anadolu Agency",
+     "url": "https://www.aa.com.tr/en/science-technology/openai-countersues-apple-over-alleged-trade-secret-theft-supplier-pressure/4140950"
+    },
+    {
+     "name": "Gizmodo",
+     "url": "https://gizmodo.com/openai-files-counterclaim-against-apple-in-ongoing-trade-secrets-fight-2000846263"
+    }
+   ]
+  },
+  {
+   "section": "AI",
+   "headline": "OpenAI fixes GPT-6.2 billing bug, making Astra and Sol users hit limits up to 40 per cent faster",
+   "standfirst": "Product lead Thibault Sottiaux offered one banked allowance reset to Go, Plus, Pro and Business accounts ahead of December's shared ChatGPT and Codex token pool.",
+   "body": [
+    "OpenAI corrected a launch billing error that had undercounted usage of its GPT-6.2 Astra and GPT-6.2 Sol models across ChatGPT Work and Codex, meaning identical workloads now exhaust subscription allowances 40 per cent faster on Astra and 25 per cent faster on Sol than a week earlier. Disclosed on X on 26 November by ChatGPT and Codex product lead Thibault Sottiaux, the adjustment does not affect other models or direct API billing, and OpenAI will not retroactively charge for past usage.",
+    "OpenAI stated both models remain more allowance-efficient than predecessors GPT-6 Astra and GPT-6.1 Sol, and issued one banked allowance reset — expiring after one month and redeemable via web or desktop Settings once a covered quota falls below 80 per cent — to Go, Plus, Pro and Business users. Enterprise and Edu workspaces were not included in the compensation, while OpenAI's documentation sets over-limit credit usage at three times standard rates through 28 February 2027 and six times from 1 March.",
+    "The metering correction lands alongside OpenAI's rollout of a unified Chat and Work experience to initial Pro testers this week, ahead of a December shift placing ChatGPT reasoning tasks, Work agents and Codex under a single token-based allowance for Plus, Pro and Business subscribers while leaving Instant chats unlimited."
+   ],
+   "sources": [
+    {
+     "name": "InfoWorld",
+     "url": "https://www.infoworld.com/article/4253883/openais-gpt%E2%80%916-2-correction-means-you-get-less-ai-for-the-same-fee.html"
+    },
+    {
+     "name": "gHacks",
+     "url": "https://www.ghacks.net/2026/11/27/openai-fixes-a-billing-bug-and-chatgpt-users-will-now-hit-gpt-6-2-limits-40-faster/"
+    },
+    {
+     "name": "MLQ.ai",
+     "url": "https://mlq.ai/news/openai-merges-chatgpts-chat-and-work-tabs-heavy-users-may-hit-limits-sooner/"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/"
+    }
+   ]
+  },
+  {
+   "section": "Technology",
+   "headline": "AMD submits initial RDNA 5 (GFX13) graphics enablement for Linux 7.5 as Intel flips e64 default",
+   "standfirst": "Experimental DRM-Next patches cover GC 13, GMC 13, SDMA 8 and DCN 6 ahead of 2027 hardware, while Mesa ANV enables native 64-bit shader addressing for Xe3P.",
+   "body": [
+    "AMD has queued initial kernel enablement for its next-generation GFX13 graphics IP — expected to underpin RDNA 5 Radeon GPUs — in a 26 November DRM-Next pull request targeting the Linux 7.5 merge window. Phoronix and VideoCardz report the experimental code builds on an eight-patch series spanning more than 12,600 lines across GFX 13.0.1 and GFX 13.0.4 blocks, alongside AMDGPU and AMDKFD fixes.",
+    "The submission brings up Graphics Core 13 (GC 13), Graphics Memory Controller 13 (GMC 13), SDMA 8, SoC v2.0 and Display Core Next 6 (DCN 6). On the userspace side, AMD has also opened initial GFX13 merge requests for Mesa's RADV Vulkan and RadeonSI OpenGL drivers ahead of Linux 7.5's expected stable release in the first quarter of 2027 and rumoured RDNA 5 hardware launches later next year.",
+    "Separately on Friday 27 November, Intel developers flipped efficient 64-bit shader memory addressing ('e64') on by default in Mesa 27.0-devel's ANV Vulkan driver for upcoming Nova Lake P processors with Xe3P integrated graphics. Replacing legacy 32-bit offset addressing — which Nova Lake P retains alongside e64 as a transitional generation — the change followed Mesa Git bug fixes that pushed e64 pass rates above the 32-bit path."
+   ],
+   "sources": [
+    {
+     "name": "Phoronix (AMD RDNA 5)",
+     "url": "https://www.phoronix.com/news/AMD-RDNA5-Linux-7.5-Initial"
+    },
+    {
+     "name": "VideoCardz",
+     "url": "https://videocardz.com/newz/amd-rdna-5-graphics-support-is-coming-to-linux-7-5"
+    },
+    {
+     "name": "Phoronix (Intel e64)",
+     "url": "https://www.phoronix.com/news/Intel-Efficient-64-bit-e64-ANV"
+    }
+   ]
+  },
+  {
+   "section": "Formula 1",
+   "headline": "Antonelli heads Mercedes 1-2 in Qatar practice as Norris puts McLaren third and fourth",
+   "standfirst": "Lando Norris finished 0.445s clear of fifth-placed Verstappen but warned Mercedes is 'at a different level' in Lusail, while Red Bull was fined €30,000 over an FP1 pit incident.",
+   "body": [
+    "Newly crowned 2026 world champion Kimi Antonelli led a Mercedes one-two in both Friday practice sessions at the Lusail International Circuit, setting a 1:23.077 on medium tyres in FP2 to finish 0.127s ahead of team-mate George Russell. Under floodlights in representative qualifying conditions, McLaren's Lando Norris took third on softs in 1:23.522 (+0.445s), just 0.027s clear of fourth-placed Oscar Piastri (1:23.549).",
+    "Red Bull's Max Verstappen (+0.499s) and Isack Hadjar (+0.506s) placed fifth and sixth, ahead of Ferrari's Charles Leclerc (+1.022s) and Lewis Hamilton (+1.139s). FP2 was extended by 13 minutes after two red flags — one to clear gravel, the second when Pierre Gasly beached his Alpine at Turn 14 — and ended under a Virtual Safety Car after Hamilton stopped with a power loss, while Leclerc spun through the gravel after encountering Liam Lawson.",
+    "Norris said McLaren looked competitive against the rest of the field but called Mercedes 'at a different level', estimating a seven-tenths-per-lap deficit that overnight setup work would not erase. Verstappen cited a front-to-rear 'disconnected' balance in the RB22, while stewards took no further action over an FP2 braking-zone near-miss between Hamilton and Verstappen. Earlier, stewards fined Red Bull €30,000 (€20,000 suspended for 12 months) under International Sporting Code Article 12.2.1.h after Hadjar was released in FP1 with a brake-cooling blower attached, clipping a mechanic's foot."
+   ],
+   "sources": [
+    {
+     "name": "FIA",
+     "url": "https://www.fia.com/news/f1-antonelli-leads-mercedes-one-two-disrupted-qatar-fp2"
+    },
+    {
+     "name": "Formula1.com",
+     "url": "https://www.formula1.com/en/latest/article/fp2-antonelli-tops-extended-second-practice-from-russell-and-norris-in-qatar.6jAa2kcIAVqOPHW30oipfm"
+    },
+    {
+     "name": "Motorsport.com",
+     "url": "https://www.motorsport.com/f1/news/lando-norris-mercedes-at-a-different-level-in-qatar/10878432/"
+    },
+    {
+     "name": "PlanetF1",
+     "url": "https://www.planetf1.com/news/f1-results-qatar-grand-prix-2026-fp2-lusail"
+    },
+    {
+     "name": "RacingNews365",
+     "url": "https://racingnews365.com/red-bull-handed-massive-punishment-after-alarming-isack-hadjar-incident"
+    }
+   ]
+  },
+  {
+   "section": "Formula 1",
+   "headline": "FIA confirms mid-2028 V6 engine freeze and dyno limits ahead of 2030 V8 switch",
+   "standfirst": "Performance upgrades lock after round 13 of 2028 as established makers face V8 dyno bans until July 2028, while General Motors receives a newcomer exemption.",
+   "body": [
+    "FIA single-seater director Nikolas Tombazis confirmed to Motorsport.com on Friday 27 November that Formula 1 will freeze performance development of the current hybrid V6 power units from the 13th round of the 2028 season, restricting subsequent changes to reliability updates. Agreed in principle across manufacturers ahead of next month's World Motor Sport Council vote, the rules govern the transition to 2.1-litre turbocharged V8 engines with roughly 10 per cent electrical output in 2030.",
+    "To prevent parallel engine spending and early pivots, existing manufacturers are barred from single-cylinder V8 dyno testing until 1 October 2027 and from running complete V8 power units on dynos until 1 July 2028 — roughly coinciding with the round-13 V6 freeze. Newcomer General Motors, which shelved its 2029 V6 programme to keep Cadillac as a Ferrari customer until 2030, is exempt from those early testing restrictions. Red Bull Powertrains chief Laurent Mekies told PlanetF1 it was one of the rare moments all parties aligned on a framework.",
+    "Tombazis acknowledged the FIA was 'a bit late on the ADUO side' in adapting the Additional Development and Upgrade Opportunities catch-up mechanism, stressing lagging manufacturers such as Honda must have scope to converge before performance locks in mid-2028."
+   ],
+   "sources": [
+    {
+     "name": "Motorsport.com",
+     "url": "https://www.motorsport.com/f1/news/fia-confirms-f1-engine-freeze-and-imposes-testing-restrictions-ahead-of-v8-return/10878333/"
+    },
+    {
+     "name": "PlanetF1",
+     "url": "https://www.planetf1.com/news/f1-v8-engines-2028-engine-freeze-laurent-mekies"
+    },
+    {
+     "name": "Crash.net",
+     "url": "https://www.crash.net/f1/news/1111145/1/details-f1-engine-freeze-ahead-v8-return-emerge"
+    }
+   ]
+  }
+ ],
+ "today": [
+  "Saturday 28 November: Qatar Grand Prix at Lusail — FP3 at 14:30 UK time, qualifying at 18:00 UK time.",
+  "Sunday 29 November: Qatar Grand Prix 57-lap race at 16:00 UK time (27-lap maximum tyre stint); EU Euro 7 emissions rules apply to new car and van type-approvals; Spain holds a general election.",
+  "Tuesday 1 December: UK government publishes its Defence Finance and Investment Strategy; scheduled Chapter 11 bankruptcy auction for Character.AI's platform and 21 million user chat logs.",
+  "Wednesday 2 – Sunday 6 December: NATO foreign ministers meet in Brussels (2 Dec); EU competition ministers consider Ireland's 'Made in Europe' UK car assembly compromise (3 Dec); Gadi Eisenkot's 28-day Israeli coalition mandate expires (6 Dec)."
+ ],
+ "briefs": [
+  {
+   "text": "Nvidia kernel maintainer Sasha Levin requested dropping his experimental agents branch from linux-next to submit an in-tree agents/skills directory — covering Fixes tags, stable backports, Coccinelle sibling-bug checks and commit messages — for the Linux 7.5 merge window.",
+   "source": {
+    "name": "Phoronix",
+    "url": "https://www.phoronix.com/news/Linux-AI-Agent-Skills-Ready"
+   }
+  },
+  {
+   "text": "The UK government introduced the Cutting Costs (European Partnership) Bill on 26 November alongside published UK-EU draft texts for a Common Sanitary and Phytosanitary Area ending export health certificates up to £200 each and linking UK-EU emissions trading to exempt £6.5bn of British exports from EU carbon border levies.",
+   "source": {
+    "name": "GOV.UK",
+    "url": "https://www.gov.uk/government/news/cutting-costs-bill-to-make-doing-business-with-europe-cheaper-and-easier"
+   }
+  },
+  {
+   "text": "Provisional Office for National Statistics figures published on 26 November show UK long-term net migration fell from 204,000 to 77,000 in the year ending June 2026 — the lowest non-pandemic figure since 1997 — as non-EU+ arrivals dropped by over 100,000 while British (-137,000) and EU+ (-45,000) net flows stayed negative.",
+   "source": {
+    "name": "Office for National Statistics",
+    "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/bulletins/longterminternationalmigrationprovisional/yearendingjune2026"
+   }
+  },
+  {
+   "text": "The Ministry of Defence has begun writing to about 100,000 Strategic Reserve veterans for the first time since the Cold War to update cyber, medical and communications skills records and invite up to 1,000 volunteers for NATO's spring 2027 Steadfast Defender exercise ahead of Armed Forces Bill plans raising the recall age limit from 55 to 65.",
+   "source": {
+    "name": "ADS Advance",
+    "url": "https://www.adsadvance.co.uk/mod-writes-to-100000-veterans-strategic-reserve/"
+   }
+  },
+  {
+   "text": "In Israeli coalition talks ahead of Gadi Eisenkot's 6 December deadline, Ra'am leader Mansour Abbas is set to demand two ministries and address Hamas's terror designation as Benjamin Netanyahu reportedly weighs serving second in a rotational unity government with Yashar.",
+   "source": {
+    "name": "The Jerusalem Post",
+    "url": "https://www.jpost.com/israel-election-2026/2026-11-28/live-updates-916355"
+   }
+  },
+  {
+   "text": "The FIA International Court of Appeal dismissed Audi's Monza protest (Case ICA-2016-14) on 27 November, upholding stewards' decision to take no action against Racing Bulls driver Yuki Tsunoda over an extra formation lap at the Italian Grand Prix.",
+   "source": {
+    "name": "FIA",
+    "url": "https://www.fia.com/news/ica-decision-2026-14-dated-27-11-26-operative-part-audi-revolut-f1-team-2026-fia-formula-one"
+   }
+  }
+ ]
+}
